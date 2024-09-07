@@ -21,27 +21,28 @@ const MobileNav = ({ handleOpen }: any) => {
       </div>
 
       <div className="space-y-9 mb-6 text-[14px] font-light">
-        <Link href="/about">
+        <Link href="/">
           <p>Home</p>
         </Link>
 
         <p>
-          <Link href="contact">Location</Link>
+          <Link href="/location">Location</Link>
         </p>
 
         <p>
-          <Link href="activities">About Us</Link>
-        </p>
-        <p>
-          <Link href="activities">Career</Link>
+          <Link href="/about">About Us</Link>
         </p>
 
         <p>
-          <Link href="resources">Contact Us</Link>
+          <Link href="/career">Career</Link>
+        </p>
+
+        <p>
+          <Link href="contact">Contact Us</Link>
         </p>
       </div>
-      <Link href="/donate">
-        <button className="bg-[#E62074] text-white  py-[16px] px-[24px] rounded-lg ">
+      <Link href="/">
+        <button className="bg-[#E62074] text-white text-[14px]  py-[8px] px-[20px] rounded-lg ">
           Stay in Touch
         </button>
       </Link>

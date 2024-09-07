@@ -3,6 +3,7 @@
 
 import { Footer } from '@/components/Footer';
 import { Nav } from '@/components/Nav';
+import Link from 'next/link';
 // import Link from 'next/link';
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
       <Nav />
       <section className="pb-5 md:pb-20">
         <div className="max-w-[30rem]  md:max-w-7xl m-auto px-4 py-9 md:py-0 flex flex-col gap-8 md:flex-row md:justify-evenly md:items-center xl:px-0">
-          <div className="space-y-4 md:space-y-6 md:flex-1 lg:flex-auto ">
+          <div className="space-y-4 md:space-y-6 md:flex-1 lg:flex-auto lg:pl-3 ">
             <h1 className="font-bold text-[30px] md:text-[40px] lg:text-[55px] xl:text-[70px] text-balance leading-tight">
               Leading the Way <br className="hidden lg:block" /> in{' '}
               <span className="text-[#E62074]">Child {''}</span>
@@ -133,7 +134,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className="flex-1 md:ml-2 lg:ml-5">
+          <div className="flex-1  md:ml-2 lg:ml-5">
             <h1 className="font-medium text-[25px] lg:text-[40px] mb-4">
               Who are we?
             </h1>
@@ -168,9 +169,11 @@ export default function Home() {
           <p className="text-txtcolor text-[12px] md:text-[14px] lg:text-[16px] pb-5">
             To learn more about one of our world class centres serving you in
             your area, <br className="hidden md:block" /> please see our{' '}
-            <span className="text-[#E62074]">locations page</span> or contact us
-            about how we can <br className="hidden md:block" /> best care for
-            your child.
+            <Link href="/location">
+              <span className="text-[#E62074]">locations page</span>
+            </Link>{' '}
+            or contact us about how we can <br className="hidden md:block" />{' '}
+            best care for your child.
           </p>
           <button className="bg-[#3B465C] text-white text-[12px] md:text-[14px] lg:text-[20px] py-[9px] md:py-[12px] px-[24px]  lg:px-[32px] rounded-lg ">
             Enquire Now

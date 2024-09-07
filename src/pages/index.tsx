@@ -7,7 +7,7 @@ import { Nav } from '@/components/Nav';
 
 export default function Home() {
   return (
-    <div className="font-main">
+    <div className="font-main overflow-clip">
       <Nav />
       <section className="pb-5 md:pb-20">
         <div className="max-w-[30rem]  md:max-w-7xl m-auto px-4 py-9 md:py-0 flex flex-col gap-8 md:flex-row md:justify-evenly md:items-center xl:px-0">

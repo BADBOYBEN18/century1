@@ -4,7 +4,6 @@ import Layout from '@/components/Layout';
 import Link from 'next/link';
 import React from 'react';
 
-
 const Location = () => {
   return (
     <Layout>
@@ -29,7 +28,7 @@ const Location = () => {
             </p>
           </div>
           <div className="pb-6">
-            <div className="w-full py-[12px] px-4  bg-[#4D6A79] flex justify-between items-center">
+            <div className="w-full py-[12px] px-4 lg:px-4  bg-[#4D6A79] flex justify-between items-center">
               <div>
                 <p className="text-white">L.O.C.C Centers</p>
               </div>

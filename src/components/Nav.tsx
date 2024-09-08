@@ -13,16 +13,18 @@ export const Nav = () => {
     setOpen(!open);
   };
   return (
-    <div className="font-main shadow-sm ">
+    <div className="font-main shadow-sm">
       {open && <MobileNav handleOpen={handleOpen} />}
       <div className="px-4 max-w-7xl m-auto md:px-7  xl:px-2">
         <div className="py-6 flex items-center justify-between">
-          <div className="">
-            <h1 className="font-sora text-[24px] font-semibold ">L.O.C.C</h1>
-            <p className="font-sora text-xs font-semibold">
-              Light Olives Child Center.
-            </p>
-          </div>
+          <Link href="/">
+            <div className="prevent-select">
+              <h1 className="font-sora text-[24px] font-semibold ">L.O.C.C</h1>
+              <p className="font-sora text-xs font-semibold">
+                Light Olives Child Center.
+              </p>
+            </div>
+          </Link>
           <nav className="hidden lg:flex items-center gap-6 ">
             <Link href="/" className=" text-black text-lg">
               <p
@@ -57,17 +59,6 @@ export const Nav = () => {
                 About Us
               </p>
             </Link>
-            <Link href="career" className=" text-black text-lg">
-              <p
-                className={`${
-                  path === '/career'
-                    ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2'
-                    : ''
-                } bg-no-repeat bg-bottom`}
-              >
-                Career
-              </p>
-            </Link>
             <Link href="/contact" className=" text-black text-lg">
               <p
                 className={`${
@@ -80,9 +71,11 @@ export const Nav = () => {
               </p>
             </Link>
           </nav>
-          <button className="bg-[#E62074] text-white hidden lg:block py-[16px] px-[24px] rounded-lg ">
-            Stay in Touch
-          </button>
+          <Link href="/contact">
+            <button className="bg-[#E62074] text-white hidden lg:block py-[16px] px-[24px] rounded-lg ">
+              Stay in Touch
+            </button>
+          </Link>
           {/* <button className="lg:hidden border border-gray-800 rounded-full p-3">
             <RxHamburgerMenu />
           </button> */}

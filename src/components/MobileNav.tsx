@@ -1,9 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @next/next/no-img-element */
+
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { IoIosClose } from 'react-icons/io';
+
 const MobileNav = ({ handleOpen }: any) => {
+  const router = useRouter();
+
+  const navigate = (path: string) => {
+    router.push(path);
+    handleOpen();
+  };
+
   return (
     <div className="bg-white lg:hidden  text-black items-center h-full fixed  z-[99] py-9 px-4 md:px-[3rem] w-full">
       <div className="flex justify-between mb-[4rem]">
@@ -20,28 +30,30 @@ const MobileNav = ({ handleOpen }: any) => {
         </button>
       </div>
 
-      <div className="space-y-9 mb-6 text-[14px] font-light">
-        <Link href="/">
+      <div className=" mb-10 text-[14px] font-light">
+        <a onClick={() => navigate('/')}>
           <p>Home</p>
-        </Link>
+        </a>
+        <br />
+        <br />
 
-        <p>
-          <Link href="/location">Location</Link>
-        </p>
+        <a onClick={() => navigate('/location')}>
+          <p>Location</p>
+        </a>
+        <br />
+        <br />
 
-        <p>
-          <Link href="/about">About Us</Link>
-        </p>
+        <a onClick={() => navigate('/about')}>
+          <p>About us</p>
+        </a>
+        <br />
+        <br />
 
-        <p>
-          <Link href="/career">Career</Link>
-        </p>
-
-        <p>
-          <Link href="contact">Contact Us</Link>
-        </p>
+        <a onClick={() => navigate('/contact')}>
+          <p>Contact Us</p>
+        </a>
       </div>
-      <Link href="/">
+      <Link href="/contact">
         <button className="bg-[#E62074] text-white text-[14px]  py-[8px] px-[20px] rounded-lg ">
           Stay in Touch
         </button>

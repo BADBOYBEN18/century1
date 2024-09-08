@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Layout from '@/components/Layout';
+import Link from 'next/link';
 
 const about = () => {
   return (
@@ -260,9 +261,11 @@ const about = () => {
             <p className="text-txtcolor text-[12px] md:text-[14px] lg:text-[16px] pb-5">
               To learn more about one of our world class centres serving you in
               your area, <br className="hidden md:block" /> please see our{' '}
-              <span className="text-[#E62074]">locations page</span> or contact
-              us about how we can <br className="hidden md:block" /> best care
-              for your child.
+              <Link href="/location">
+                <span className="text-[#E62074]">locations page</span>
+              </Link>{' '}
+              or contact us about how we can <br className="hidden md:block" />{' '}
+              best care for your child.
             </p>
             <button className="bg-[#3B465C] text-white text-[12px] md:text-[14px] lg:text-[20px] py-[9px] md:py-[12px] px-[24px]  lg:px-[32px] rounded-lg ">
               Enquire Now

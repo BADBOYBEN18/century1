@@ -44,7 +44,7 @@ const contact = () => {
                       Name
                     </label>
                     <input
-                      className="bg-[#00000040]  py-2 lg:py-4 p-2 w-full rounded-sm placeholder:text-[12px] placeholder:text-[#00000080] placeholder:font-light"
+                      className="bg-[#fefbfc]  border-[0.25px] py-2 lg:py-4 p-2 w-full rounded-sm placeholder:text-[12px] placeholder:text-[#00000080] placeholder:font-light"
                       type="text"
                       placeholder="Enter your name"
                       name=""
@@ -59,7 +59,7 @@ const contact = () => {
                       Email
                     </label>
                     <input
-                      className="bg-[#00000040]  py-2 lg:py-4 w-full p-2 rounded-sm placeholder:text-[12px] placeholder:text-[#00000080] placeholder:font-light"
+                      className="bg-[#fefbfc]  border-[0.25px]  py-2 lg:py-4 w-full p-2 rounded-sm placeholder:text-[12px] placeholder:text-[#00000080] placeholder:font-light"
                       type="email"
                       placeholder=" Enter your email"
                       name=""
@@ -77,7 +77,7 @@ const contact = () => {
                   <textarea
                     id="message"
                     placeholder="Write your message"
-                    className="w-full lg:w-1/2 xl:w-[276px] flex-1 p-2 bg-[#00000040] rounded-sm placeholder:text-[12px] placeholder:text-[#00000080] placeholder:font-light"
+                    className="w-full lg:w-1/2 xl:w-[276px] flex-1 p-2 bg-[#fefbfc]  border-[0.25px] rounded-sm placeholder:text-[12px] placeholder:text-[#00000080] placeholder:font-light"
                     rows={4}
                   ></textarea>
                 </div>
@@ -109,7 +109,7 @@ const contact = () => {
                   Name
                 </label>
                 <input
-                  className="bg-[#00000040] flex-1 py-2 p-2 w-full rounded-sm placeholder:text-[12px] placeholder:text-[#00000080] placeholder:font-light"
+                  className="bg-[#fefbfc]  border-[0.25px] flex-1 py-2 p-2 w-full rounded-sm placeholder:text-[12px] placeholder:text-[#00000080] placeholder:font-light"
                   type="text"
                   placeholder="Enter your name"
                   name=""
@@ -124,7 +124,7 @@ const contact = () => {
                   Email
                 </label>
                 <input
-                  className="bg-[#00000040] flex-1 py-2 p-2 w-full  rounded-sm placeholder:text-[12px] placeholder:text-[#00000080] placeholder:font-light"
+                  className="bg-[#fefbfc]  border-[0.25px] flex-1 py-2 p-2 w-full  rounded-sm placeholder:text-[12px] placeholder:text-[#00000080] placeholder:font-light"
                   type="email"
                   placeholder=" Enter your email"
                   name=""
@@ -142,7 +142,7 @@ const contact = () => {
               <textarea
                 id="message"
                 placeholder="Write your message"
-                className="w-1/2 p-2 bg-[#00000040] rounded-sm placeholder:text-[12px] placeholder:text-[#00000080] placeholder:font-light"
+                className="w-1/2 p-2 bg-[#fefbfc]  border-[0.25px] rounded-sm placeholder:text-[12px] placeholder:text-[#00000080] placeholder:font-light"
                 rows={4}
               ></textarea>
             </div>

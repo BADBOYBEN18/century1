@@ -3,6 +3,8 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
+import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import React from 'react';
 import { IoIosClose } from 'react-icons/io';
 
@@ -30,25 +32,60 @@ const MobileNav = ({ handleOpen }: any) => {
         </button>
       </div>
 
-      <div className=" mb-10 text-[14px] font-light">
+      <div className=" mb-10 text-[14px] font-light cursor-pointer">
         <a onClick={() => navigate('/')}>
           <p>Home</p>
         </a>
         <br />
         <br />
-
         <a onClick={() => navigate('/location')}>
           <p>Location</p>
         </a>
         <br />
         <br />
-
         <a onClick={() => navigate('/about')}>
           <p>About us</p>
         </a>
         <br />
         <br />
+        <Menu as="div" className="relative inline-block text-left ">
+          <div>
+            <MenuButton className="inline-flex w-full justify-center items-center text-lg text-black">
+              <p className="text-[14px]">Program</p>
 
+              <ChevronDownIcon
+                aria-hidden="true"
+                className="-mr-1 h-5 w-5 text-gray-400"
+              />
+            </MenuButton>
+          </div>
+          <MenuItems
+            transition
+            className="absolute  z-10 mt-2 w-52 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+          >
+            <div className="py-1">
+              <MenuItem>
+                <Link
+                  href="/infants"
+                  className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                >
+                  Infants & Toddlers
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link
+                  href="/preschool"
+                  className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                >
+                  Pre-School & Kindergarten
+                </Link>
+              </MenuItem>
+            </div>
+          </MenuItems>
+        </Menu>
+        <br />
+        <br />
+        <br />
         <a onClick={() => navigate('/contact')}>
           <p>Contact Us</p>
         </a>

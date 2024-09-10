@@ -65,15 +65,7 @@ export const Nav = () => {
             <Menu as="div" className="relative inline-block text-left ">
               <div>
                 <MenuButton className="inline-flex w-full justify-center items-center text-lg text-black">
-                  <p
-                    className={`${
-                      path === '/infants' || 'preschool'
-                        ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2'
-                        : ''
-                    } bg-no-repeat bg-bottom`}
-                  >
-                    Program
-                  </p>
+                  <p>Program</p>
 
                   <ChevronDownIcon
                     aria-hidden="true"

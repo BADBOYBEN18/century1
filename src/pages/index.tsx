@@ -124,13 +124,14 @@ export default function Home() {
           <div className="flex-1 mt-4 md:mt-0">
             <img
               src="https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Rectangle%2016.png?updatedAt=1725631706230"
+              className="lg:max-xl:rounded-md lg:max-xl:h-[500px] object-cover object-center"
               alt=""
             />
           </div>
           <div className="flex-1 hidden lg:block">
             <img
               src="https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Rectangle%2012.png?updatedAt=1725631705859"
-              className="hidden lg:block"
+              className="hidden lg:block lg:max-xl:rounded-md lg:max-xl:h-[500px] object-cover object-center"
               alt=""
             />
           </div>

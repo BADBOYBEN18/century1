@@ -17,7 +17,7 @@ const MobileNav = ({ handleOpen }: any) => {
   };
 
   return (
-    <div className="bg-white lg:hidden  text-black items-center h-full fixed  z-[99] py-9 px-4 md:px-[3rem] w-full">
+    <div className="bg-white lg:hidden  text-black items-center h-full fixed  z-[99] py-9 px-4 md:px-[3rem] w-full overflow-scroll">
       <div className="flex justify-between mb-[4rem]">
         <Link href="/">
           <div className="">

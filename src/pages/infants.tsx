@@ -21,7 +21,7 @@ const Infants = () => {
             </div>
             <div className="md:flex-1 space-y-3 mb-8 ">
               <h1 className="text-[24px] md:text-[30px] lg:text-[40px] font-medium">
-                Infants
+                Infants (0-18 months)
               </h1>
               <p className="text-[12px] lg:max-w-xl md:text-[14px] xl:text-[16px] xl:pb-4 text-txtcolor">
                 Infant’s experience learning through their senses before they
@@ -47,7 +47,7 @@ const Infants = () => {
 
         <div className="border-[0.25px] max-w-[17rem] relative  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-[#bbb2b280] sm:mx-0 md:hidden"></div>
 
-        <section className=" px-4 pt-9 pb-10 md:py-10 lg:px-6  lg:py-20">
+        {/* <section className=" px-4 pt-9 pb-10 md:py-10 lg:px-6  lg:py-20">
           <div className="max-w-[30rem]  md:max-w-4xl lg:max-w-7xl flex flex-col md:flex-row md:gap-x-9 md:items-center m-auto ">
             <div className="md:flex-1 space-y-3 mb-8 ">
               <p className="text-[12px] lg:max-w-xl md:text-[14px] lg:text-[16px] lg:pb-4 text-txtcolor">
@@ -77,9 +77,9 @@ const Infants = () => {
               />
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="bg-[#101319] px-4  lg:mt-14 py-[60px] md:py-7 lg:py-[90px] text-white">
+        {/* <section className="bg-[#101319] px-4  lg:mt-14 py-[60px] md:py-7 lg:py-[90px] text-white">
           <div className="max-w-[30rem] md:max-w-4xl lg:max-w-7xl flex flex-col md:flex-row md:gap-x-9 xl:items-center m-auto ">
             <div className="md:flex-1 mb-4">
               <img
@@ -142,7 +142,7 @@ const Infants = () => {
               />
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="pb-14 pt-14 md:py-12 lg:py-[160px]">
           <div className="max-w-[30rem]  md:max-w-4xl lg:max-w-7xl m-auto px-4 text-center space-y-4 md:space-y-8">

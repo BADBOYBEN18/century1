@@ -83,7 +83,15 @@ export const Nav = () => {
                       href="/infants"
                       className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                     >
-                      Infants & Toddlers
+                      Infants
+                    </Link>
+                  </MenuItem>
+                  <MenuItem>
+                    <Link
+                      href="/Toddlers"
+                      className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                    >
+                      Toddlers
                     </Link>
                   </MenuItem>
                   <MenuItem>

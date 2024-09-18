@@ -45,6 +45,7 @@ export default function Home() {
           <h1 className="text-txtcolor text-[15px] md:text-[20px] lg:text-[30px] text-center mb-6 ">
             Choose one of our programs for your child
           </h1>
+
           <div className="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap  items-center justify-center gap-4 ">
             <div className="w-[350px] md:w-[350px] md:h-[320px]   xl:w-[450px] lg:h-[380px]  md:flex md:flex-col items-start justify-center   space-y-3 lg:space-y-0 bg-[#FDE81280] rounded-xl p-4  lg:p-5 ">
               <div className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] grid items-center justify-center  p-2 lg:mb-[20px] xl:mb-[32px]  rounded-lg bg-white">
@@ -54,14 +55,14 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col justify-center items-start ">
-                <h1 className="font-medium text-[16px] lg:mb-[10px] xl:mb-[20px] lg:text-[24px]">
-                  Infants & Toddlers
+                <h1 className="font-medium text-[16px] lg:mb-[10px] xl:mb-[20px] lg:text-[20px] xl:text-[24px]">
+                  Infant Program (0-18 months)
                 </h1>
                 <p className="text-txtcolor text-[12px] lg:text-[15px] pb-4  ">
-                  Infants and toddlers learn through exploring senses and
-                  activity. Our environment is the perfect setup to keep your
-                  child engaged and growing by leaps and bounds. Click below to
-                  learn more about what we can do for your infant or toddler!
+                  Our infant program provides a safe and nurturing environment
+                  where babies can explore and grow. With a focus on sensory
+                  play, motor skill development, and individualized care, we
+                  ensure each child receives the attention they need to thrive.
                 </p>
                 <button className="bg-white text-black text-[12px] md:text-[10px] lg:text-[14px] py-[9px] md:py-[12px] px-[24px] lg:px-[32px] rounded-lg ">
                   Learn More
@@ -77,15 +78,14 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col justify-center items-start">
-                <h1 className="font-medium text-[16px] lg:mb-[10px] xl:mb-[10px] lg:text-[24px]">
-                  Preschool & Kindergarten
+                <h1 className="font-medium text-[16px] lg:mb-[10px] xl:mb-[10px] lg:text-[20px] xl:text-[24px]">
+                  Toddler Program (18 months - 2.5 years)
                 </h1>
                 <p className="text-txtcolor text-[12px] lg:text-[15px] pb-4">
-                  Preschool and kindergarten are a fun age for extending your
-                  child’s thinking through purposeful play and exploration to
-                  develop new skills. Click below to learn more about how we can
-                  create meaningful and engaging experiences for your
-                  preschooler or kindergartener.
+                  In our toddler program, we encourage curiosity and creativity
+                  through play-based learning. Our experienced educators help
+                  toddlers develop their language, social, and cognitive skills
+                  in a fun and interactive setting.
                 </p>
                 <button className="bg-white text-black text-[12px] md:text-[10px] lg:text-[14px] py-[9px] md:py-[12px] px-[24px] lg:px-[32px] xl: rounded-lg ">
                   Learn More
@@ -101,14 +101,14 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col justify-center items-start">
-                <h1 className="font-medium text-[16px] lg:mb-[10px] xl:mb-[20px] lg:text-[24px]">
-                  School Aged Kids
+                <h1 className="font-medium text-[16px] lg:mb-[10px] xl:mb-[20px] lg:text-[20px] xl:text-[24px]">
+                  Preschool Program (2.5 - 4 years)
                 </h1>
                 <p className="text-txtcolor text-[12px] lg:text-[15px] pb-4 ">
-                  Your 6 – 12 school aged child can relax, do homework, and make
-                  new friends in our nurturing belg:mb-[10px] xlre and after
-                  school care program. On top of this program, we offer fun
-                  experiences for PA days and an exciting summer camp.
+                  Our preschool program prepares children for kindergarten by
+                  fostering independence, problem-solving skills, and early
+                  literacy. Children engage in hands-on activities that promote
+                  both learning and self-expression.
                 </p>
                 <button className="bg-white text-black text-[12px] md:text-[10px] lg:text-[14px] py-[9px] md:py-[12px] px-[24px] lg:px-[32px] rounded-lg ">
                   Learn More

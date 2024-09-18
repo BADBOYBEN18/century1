@@ -69,7 +69,15 @@ const MobileNav = ({ handleOpen }: any) => {
                   className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                   onClick={() => navigate('/infants')}
                 >
-                  <p> Infants & Toddlers</p>
+                  <p> Infants</p>
+                </a>
+              </MenuItem>
+              <MenuItem>
+                <a
+                  className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                  onClick={() => navigate('/Toddlers')}
+                >
+                  <p>Toddlers</p>
                 </a>
               </MenuItem>
               <MenuItem>

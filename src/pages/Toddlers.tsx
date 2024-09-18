@@ -3,32 +3,31 @@ import Link from 'next/link';
 import Layout from '@/components/Layout';
 import React from 'react';
 
-const Preschool = () => {
+const Toddler = () => {
   return (
     <Layout>
       <div className="font-main">
         <section className="pt-10 px-4 lg:px-6 lg:pt-32">
           <h1 className="font-medium text-[28px] md:text-[34px] lg:text-[42px] text-center pb-9 lg:pb-12">
-            Pre-School & Kindergarten
+            Toddlers
           </h1>
           <div className="max-w-[30rem]  md:max-w-4xl lg:max-w-7xl flex flex-col md:flex-row md:gap-x-9 xl:items-center m-auto ">
             <div className="md:flex-1 mb-4">
               <img
-                src="https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Child%20(4).png?updatedAt=1725894779953"
-                className=" md:max-lg:h-[100%] object-cover object-center md:max-lg:rounded-md "
+                src="https://media.istockphoto.com/id/1785118497/photo/joyful-asian-toddler-boy-playing-toy-train-at-indoor-playground.webp?a=1&b=1&s=612x612&w=0&k=20&c=omfGhpTEXfvrFerVI6qR3uGiARocoLmfcWLWvavzcow="
+                className=" md:max-lg:h-[100%] overflow-clip object-cover object-center md:max-lg:rounded-xl "
                 alt=""
               />
             </div>
             <div className="md:flex-1 space-y-3 md:max-xl:space-y-5 mb-8 ">
               <h1 className="text-[24px] md:text-[30px] lg:text-[40px] font-medium">
-                Pre-School (2.5 - 4 years)
+                Toddler (18 months - 2.5 years)
               </h1>
               <p className="text-[12px] lg:max-w-xl md:text-[14px] xl:text-[16px] xl:pb-4 text-txtcolor">
-                Your preschooler is learning new words, ideas, and actions every
-                day. Nothing is impossible in their eyes, and we promote and
-                encourage their exploration. Our preschool program is designed
-                for 2.5 – 3.5 year-olds to provide an environment to explore
-                thinking in new ways through purposeful play. 
+                In our toddler program, we encourage curiosity and creativity
+                through play-based learning. Our experienced educators help
+                toddlers develop their language, social, and cognitive skills in
+                a fun and interactive setting.
               </p>
 
               <div className="flex justify-center md:justify-normal pt-2 md:pt-0">
@@ -170,4 +169,4 @@ const Preschool = () => {
   );
 };
 
-export default Preschool;
+export default Toddler;

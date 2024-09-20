@@ -2,10 +2,15 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const about = () => {
   return (
     <Layout>
+      <Head>
+        <title>About us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <div className="font-main overflow-clip">
         <section className="py-10 px-4 lg:px-6 lg:py-20">
           <div className="max-w-[30rem]  md:max-w-4xl lg:max-w-7xl flex flex-col-reverse md:flex-row md:gap-x-9 xl:items-center m-auto ">
@@ -16,7 +21,7 @@ const about = () => {
               />
             </div>
             <div className="md:flex-1 space-y-3 mb-8 ">
-              <h1 className="text-[20px] md:text-[30px] lg:text-[40px] font-medium">
+              <h1 className="text-[#35A76C] text-[20px] md:text-[30px] lg:text-[40px] font-medium">
                 Why Light Olives
               </h1>
               <p className="text-[12px] lg:max-w-xl md:text-[14px] lg:text-[16px] lg:pb-4 text-txtcolor">
@@ -36,7 +41,7 @@ const about = () => {
           <div className="lg:max-w-7xl m-auto">
             <div className="max-w-[30rem]  md:max-w-4xl lg:max-w-7xl m-auto text-center space-y-4">
               <p className="pb-2 text-[12.5px] md:text-[15px]  lg:text-[20px]">
-                <span className="inline-flex mr-1 text-[#E62074]">
+                <span className="inline-flex mr-1  text-[#EC6B00]">
                   <img
                     src="https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Services%20Tag.svg?updatedAt=1725676799286"
                     alt=""
@@ -44,7 +49,7 @@ const about = () => {
                 </span>
                 Services
               </p>
-              <h2 className="text-[15px] md:text-[20px] lg:text-[32px] font-medium">
+              <h2 className="text-[#35A76C] text-[15px] md:text-[20px] lg:text-[32px] font-medium">
                 What do we provide
               </h2>
               <p className="text-[12px] sm:text-[13.5px] md:text-[16px]">
@@ -207,7 +212,7 @@ const about = () => {
               </div>
 
               <div className="flex flex-col items-center md:items-start justify-center md:flex-1 md:mb-[-8rem] lg:mb-[-15rem]">
-                <h1 className="text-[20px] md:text-[23px] lg:text-[35px]  font-medium pb-3">
+                <h1 className="text-[#E62074] text-[20px] md:text-[23px] lg:text-[35px]  font-medium pb-3">
                   A Home Away from Home
                 </h1>
                 <div className="relative">
@@ -230,7 +235,7 @@ const about = () => {
         <section className="py-10 px-4 lg:px-6 lg:py-20">
           <div className="max-w-[30rem]  md:max-w-4xl lg:max-w-7xl flex flex-col md:flex-row md:gap-x-9 xl:items-center m-auto ">
             <div className="md:flex-1 space-y-3 mb-8 ">
-              <h1 className="text-[20px] md:text-[30px] lg:text-[40px] font-medium">
+              <h1 className="text-[#37A7DF] text-[20px] md:text-[30px] lg:text-[40px] font-medium">
                 Extended Times
               </h1>
               <p className="text-[12px] lg:max-w-xl md:text-[14px] lg:text-[16px] lg:pb-4 text-txtcolor">
@@ -255,14 +260,15 @@ const about = () => {
 
         <section className="pb-14  lg:py-[160px]">
           <div className="max-w-[30rem]  md:max-w-4xl lg:max-w-7xl m-auto px-4 text-center space-y-4 md:space-y-8">
-            <h1 className="text-[20px] md:text-[25px] lg:text-[40px]">
-              Close to Home, Close to Heart
+            <h1 className="text-[#EC6B00] text-[20px] md:text-[25px] lg:text-[40px]">
+              Close to Home,{' '}
+              <span className="text-[#35A76C]">Close to Heart</span>
             </h1>
             <p className="text-txtcolor text-[12px] md:text-[14px] lg:text-[16px] pb-5">
               To learn more about one of our world class centres serving you in
               your area, <br className="hidden md:block" /> please see our{' '}
               <Link href="/location">
-                <span className="text-[#E62074]">locations page</span>
+                <span className="text-[#37A7DF]">locations page</span>
               </Link>{' '}
               or contact us about how we can <br className="hidden md:block" />{' '}
               best care for your child.

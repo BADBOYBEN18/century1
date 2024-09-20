@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Footer = () => {
+export const Footer = ({ year }: { year?: number }) => {
   return (
     <div className="bg-[#3B465C]">
       <footer className="max-w-7xl m-auto px-4 pt-16 pb-10 lg:pb-24 lg:px-7 font-main  text-white">
@@ -39,8 +39,8 @@ export const Footer = () => {
             </div>
 
             <p className="text-[12px] md:text-sm font-medium mb-4">
-              <span className="text-[#E62074]">©</span> 2024 Light Olives Child
-              Center. <br /> All Rights Reserved.
+              <span className="text-[#E62074]">©</span> {year} Light Olives
+              Child Center. <br /> All Rights Reserved.
             </p>
 
             <button className="bg-[#E62074] text-white text-[10px] md:text-[16px]  py-[8px] px-[24px] rounded-lg ">

@@ -2,13 +2,18 @@
 import Link from 'next/link';
 import Layout from '@/components/Layout';
 import React from 'react';
+import Head from 'next/head';
 
 const Preschool = () => {
   return (
     <Layout>
+      <Head>
+        <title>Pre-school</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <div className="font-main">
         <section className="pt-10 px-4 lg:px-6 lg:pt-32">
-          <h1 className="font-medium text-[28px] md:text-[34px] lg:text-[42px] text-center pb-9 lg:pb-12">
+          <h1 className="font-medium text-[#35A76C] text-[28px] md:text-[34px] lg:text-[42px] text-center pb-9 lg:pb-12">
             Pre-School & Kindergarten
           </h1>
           <div className="max-w-[30rem]  md:max-w-4xl lg:max-w-7xl flex flex-col md:flex-row md:gap-x-9 xl:items-center m-auto ">
@@ -148,14 +153,15 @@ const Preschool = () => {
 
         <section className="pb-14 pt-14 md:py-12 lg:py-[160px]">
           <div className="max-w-[30rem]  md:max-w-4xl lg:max-w-7xl m-auto px-4 text-center space-y-4 md:space-y-8">
-            <h1 className="text-[20px] md:text-[25px] lg:text-[40px]">
-              Play, Discover, Grow{' '}
+            <h1 className="text-[#35A76C] text-[20px] md:text-[25px] lg:text-[40px]">
+              Play, <span className="text-[#E62074]">Discover</span>,{' '}
+              <span className="text-[#37A7DF]">Grow </span>
             </h1>
             <p className="text-txtcolor text-[12px] md:text-[14px] lg:text-[16px] pb-5">
               To learn more about one of our world class centres serving you in
               your area, <br className="hidden md:block" /> please see our{' '}
               <Link href="/location">
-                <span className="text-[#E62074]">locations page</span>
+                <span className="text-[#EC6B00]">locations page</span>
               </Link>{' '}
               or contact us about how we can <br className="hidden md:block" />{' '}
               best care for your child.

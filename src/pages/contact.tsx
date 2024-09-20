@@ -1,10 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import { Nav } from '@/components/Nav';
+import Head from 'next/head';
 import React from 'react';
 
 const contact = () => {
   return (
     <div className="font-main">
+      <Head>
+        <title>Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Nav />
 
       <section className="pb-10">
@@ -33,7 +38,11 @@ const contact = () => {
             </div>
 
             {/* mobile and desktop form */}
-            <form action="">
+            <form
+              method="get"
+              encType="multipart/form-data"
+              action="mailto:chuama2016@gmail.com"
+            >
               <div className="md:max-lg:hidden lg:pt-5 xl:pt-11">
                 <div className="space-y-4 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-4 xl:gap-x-8">
                   <div>
@@ -76,6 +85,7 @@ const contact = () => {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     placeholder="Write your message"
                     className="w-full lg:w-1/2 xl:w-[276px] flex-1 p-2 bg-[#fefbfc]  border-[0.25px] rounded-sm placeholder:text-[12px] placeholder:text-[#00000080] placeholder:font-light"
                     rows={4}
@@ -98,7 +108,11 @@ const contact = () => {
         </div>
 
         {/* tablet form */}
-        <form action="">
+        <form
+          method="get"
+          encType="multipart/form-data"
+          action="mailto:chuama2016@gmail.com"
+        >
           <div className="px-4 md:max-lg:block md:max-w-4xl m-auto hidden">
             <div className="grid grid-cols-2 gap-2 mt-10 mb-4">
               <div>

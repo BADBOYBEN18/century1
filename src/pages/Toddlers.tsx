@@ -2,20 +2,25 @@
 import Link from 'next/link';
 import Layout from '@/components/Layout';
 import React from 'react';
+import Head from 'next/head';
 
 const Toddler = () => {
   return (
     <Layout>
+      <Head>
+        <title>Toddlers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <div className="font-main">
         <section className="pt-10 px-4 lg:px-6 lg:pt-32">
-          <h1 className="font-medium text-[28px] md:text-[34px] lg:text-[42px] text-center pb-9 lg:pb-12">
+          <h1 className="font-medium text-[#37A7DF] text-[28px] md:text-[34px] lg:text-[42px] text-center pb-9 lg:pb-12">
             Toddlers
           </h1>
           <div className="max-w-[30rem]  md:max-w-4xl lg:max-w-7xl flex flex-col md:flex-row md:gap-x-9 xl:items-center m-auto ">
             <div className="md:flex-1 mb-4">
               <img
                 src="https://media.istockphoto.com/id/1785118497/photo/joyful-asian-toddler-boy-playing-toy-train-at-indoor-playground.webp?a=1&b=1&s=612x612&w=0&k=20&c=omfGhpTEXfvrFerVI6qR3uGiARocoLmfcWLWvavzcow="
-                className=" md:max-lg:h-[100%] overflow-clip object-cover object-center md:max-lg:rounded-xl "
+                className=" md:max-lg:h-[100%]  object-cover object-center md:max-lg:rounded-xl "
                 alt=""
               />
             </div>
@@ -144,17 +149,17 @@ const Toddler = () => {
             </div>
           </div>
         </section> */}
-
         <section className="pb-14 pt-14 md:py-12 lg:py-[160px]">
           <div className="max-w-[30rem]  md:max-w-4xl lg:max-w-7xl m-auto px-4 text-center space-y-4 md:space-y-8">
-            <h1 className="text-[20px] md:text-[25px] lg:text-[40px]">
-              Play, Discover, Grow{' '}
+            <h1 className="text-[#35A76C] text-[20px] md:text-[25px] lg:text-[40px]">
+              Play, <span className="text-[#E62074]">Discover</span>,{' '}
+              <span className="text-[#37A7DF]">Grow </span>
             </h1>
             <p className="text-txtcolor text-[12px] md:text-[14px] lg:text-[16px] pb-5">
               To learn more about one of our world class centres serving you in
               your area, <br className="hidden md:block" /> please see our{' '}
               <Link href="/location">
-                <span className="text-[#E62074]">locations page</span>
+                <span className="text-[#EC6B00]">locations page</span>
               </Link>{' '}
               or contact us about how we can <br className="hidden md:block" />{' '}
               best care for your child.

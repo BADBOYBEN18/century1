@@ -3,12 +3,15 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import React from 'react';
 import { IoIosClose } from 'react-icons/io';
 
 const MobileNav = ({ handleOpen }: any) => {
+  const path = usePathname();
+
   const router = useRouter();
 
   const navigate = (path: string) => {
@@ -33,17 +36,26 @@ const MobileNav = ({ handleOpen }: any) => {
       </div>
 
       <div className=" mb-10 text-[14px] font-light cursor-pointer">
-        <a onClick={() => navigate('/')}>
+        <a
+          onClick={() => navigate('/')}
+          className={`${path === '/' ? 'text-[#EC6B00]' : ''}`}
+        >
           <p>Home</p>
         </a>
         <br />
         <br />
-        <a onClick={() => navigate('/location')}>
+        <a
+          onClick={() => navigate('/location')}
+          className={`${path === '/location' ? 'text-[#E62074]' : ''}`}
+        >
           <p>Location</p>
         </a>
         <br />
         <br />
-        <a onClick={() => navigate('/about')}>
+        <a
+          onClick={() => navigate('/about')}
+          className={`${path === '/about' ? 'text-[#35A76C]' : ''}`}
+        >
           <p>About us</p>
         </a>
         <br />
@@ -51,7 +63,17 @@ const MobileNav = ({ handleOpen }: any) => {
         <Menu as="div" className="relative inline-block text-left ">
           <div>
             <MenuButton className="inline-flex w-full justify-center items-center text-lg text-black">
-              <p className="text-[14px]">Program</p>
+              <p
+                className={`text-[14px] ${
+                  path === '/infants' ||
+                  path === '/Toddlers' ||
+                  path === '/preschool'
+                    ? 'text-[#FDE812]'
+                    : ''
+                }`}
+              >
+                Program
+              </p>
 
               <ChevronDownIcon
                 aria-hidden="true"
@@ -94,7 +116,10 @@ const MobileNav = ({ handleOpen }: any) => {
         <br />
         <br />
         <br />
-        <a onClick={() => navigate('/contact')}>
+        <a
+          onClick={() => navigate('/contact')}
+          className={`${path === '/contact' ? 'text-[#37A7DF]' : ''}`}
+        >
           <p>Contact Us</p>
         </a>
       </div>

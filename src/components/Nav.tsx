@@ -32,7 +32,7 @@ export const Nav = () => {
               <p
                 className={`${
                   path === '/'
-                    ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2'
+                    ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2 text-[#EC6B00]'
                     : ''
                 } bg-no-repeat bg-bottom `}
               >
@@ -43,7 +43,7 @@ export const Nav = () => {
               <p
                 className={`${
                   path === '/location'
-                    ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2'
+                    ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2 text-[#E62074]'
                     : ''
                 } bg-no-repeat bg-bottom`}
               >
@@ -54,7 +54,7 @@ export const Nav = () => {
               <p
                 className={`${
                   path === '/about'
-                    ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2'
+                    ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2 text-[#35A76C]'
                     : ''
                 } bg-no-repeat bg-bottom`}
               >
@@ -65,7 +65,17 @@ export const Nav = () => {
             <Menu as="div" className="relative inline-block text-left ">
               <div>
                 <MenuButton className="inline-flex w-full justify-center items-center text-lg text-black">
-                  <p>Program</p>
+                  <p
+                    className={`${
+                      path === '/infants' ||
+                      path === '/Toddlers' ||
+                      path === '/preschool'
+                        ? 'text-[#FDE812]'
+                        : ''
+                    }`}
+                  >
+                    Program
+                  </p>
 
                   <ChevronDownIcon
                     aria-hidden="true"
@@ -110,7 +120,7 @@ export const Nav = () => {
               <p
                 className={`${
                   path === '/contact'
-                    ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2'
+                    ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2 text-[#37A7DF]'
                     : ''
                 } bg-no-repeat bg-bottom`}
               >

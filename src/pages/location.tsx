@@ -3,10 +3,15 @@ import { IoMdShare } from 'react-icons/io';
 import Layout from '@/components/Layout';
 import Link from 'next/link';
 import React from 'react';
+import Head from 'next/head';
 
 const Location = () => {
   return (
     <Layout>
+      <Head>
+        <title>Location</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <div className="font-main overflow-clip">
         <section className="pt-10 md:pt-16 lg:pt-28 pb-10 lg:pb-16">
           <div className="sm:max-w-[30rem] md:max-w-4xl px-4 m-auto md:text-center pb-5 lg:pb-8">
@@ -20,7 +25,7 @@ const Location = () => {
                 href="https://maps.app.goo.gl/47yRAsXc82VS8yG89"
                 target="_blank"
               >
-                <span className="font-bold text-[#E62074]">
+                <span className="font-bold text-[#37A7DF]">
                   View in Google Maps
                 </span>{' '}
               </Link>
@@ -63,7 +68,7 @@ const Location = () => {
                 room always have wonderful stories to tell me and seem to know
                 my son very well.
               </p>
-              <span className="text-[12px] md:text-[14px] lg:text-[18px] text-[#9C2525]">
+              <span className="text-[12px] md:text-[14px] lg:text-[18px] text-[#37A7DF]">
                 Susan Javier - Ajax, Ont
               </span>
             </div>
@@ -85,13 +90,14 @@ const Location = () => {
 
         <section className="pb-14 lg:pb-[160px]">
           <div className="max-w-[30rem]  md:max-w-4xl lg:max-w-7xl m-auto px-4 text-center space-y-4 md:space-y-8">
-            <h1 className="text-[20px] md:text-[25px] lg:text-[40px]">
-              Close to Home, Close to Heart
+            <h1 className="text-[20px] md:text-[25px] lg:text-[40px] text-[#E62074]">
+              Close to Home,{' '}
+              <span className="text-[#37A7DF]">Close to Heart</span>
             </h1>
             <p className="text-txtcolor text-[12px] md:text-[14px] lg:text-[16px] pb-5">
               To learn more about one of our world class centres serving you in
               your area, <br className="hidden md:block" /> please see our{' '}
-              <span className="text-[#E62074]">locations page</span> or contact
+              <span className="text-[#EC6B00]">locations page</span> or contact
               us about how we can <br className="hidden md:block" /> best care
               for your child.
             </p>

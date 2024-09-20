@@ -15,7 +15,7 @@ export const Nav = () => {
     setOpen(!open);
   };
   return (
-    <div className="font-main shadow-sm bg-white lg:sticky lg:top-0">
+    <div className="font-main shadow-sm bg-white lg:sticky lg:top-0 z-50">
       {open && <MobileNav handleOpen={handleOpen} />}
       <div className="px-4 max-w-7xl m-auto md:px-7  xl:px-2">
         <div className="py-6 flex items-center justify-between">

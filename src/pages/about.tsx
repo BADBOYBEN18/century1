@@ -10,6 +10,10 @@ const about = () => {
       <Head>
         <title>About us</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="About page for light olives child care website"
+        />
       </Head>
       <div className="font-main overflow-clip">
         <section className="py-10 px-4 lg:px-6 lg:py-20">

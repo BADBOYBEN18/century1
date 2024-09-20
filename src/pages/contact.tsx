@@ -9,6 +9,10 @@ const contact = () => {
       <Head>
         <title>Contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="contct us page for light olives child care website"
+        />
       </Head>
       <Nav />
 

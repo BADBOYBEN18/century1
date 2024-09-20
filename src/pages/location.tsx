@@ -11,6 +11,10 @@ const Location = () => {
       <Head>
         <title>Location</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="location page for light olives child care website"
+        />
       </Head>
       <div className="font-main overflow-clip">
         <section className="pt-10 md:pt-16 lg:pt-28 pb-10 lg:pb-16">

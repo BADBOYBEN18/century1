@@ -3,4 +3,4 @@ Allow: /
 Allow: /location
 Allow: /about
 Allow: /contact
-Sitemap: https://locc-zeta.vercel.app/sitemap.xml
+Sitemap:  https://www.lightoliveschildcare.com/sitemap.xml

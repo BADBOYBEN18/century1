@@ -14,7 +14,10 @@ export default function Home() {
       <Head>
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Homepage for locc website" />
+        <meta
+          name="description"
+          content="Homepage for light olives child care website"
+        />
       </Head>
       <Nav />
       <section className="pb-5 md:pb-20">

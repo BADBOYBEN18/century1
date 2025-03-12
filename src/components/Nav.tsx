@@ -5,6 +5,11 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { IoIosClose } from 'react-icons/io';
+import { IoIosHome } from 'react-icons/io';
+import { FaLocationDot } from 'react-icons/fa6';
+import { IoIosMail } from 'react-icons/io';
+import { MdGroups2 } from 'react-icons/md';
+import { FaCog } from 'react-icons/fa';
 import MobileNav from './MobileNav';
 
 export const Nav = () => {
@@ -15,137 +20,241 @@ export const Nav = () => {
     setOpen(!open);
   };
   return (
-    <div className="font-main shadow-sm bg-white lg:sticky lg:top-0 z-50">
-      {open && <MobileNav handleOpen={handleOpen} />}
-      <div className="px-4 max-w-7xl m-auto md:px-7  xl:px-2">
-        <div className="py-6 flex items-center justify-between">
-          <Link href="/">
-            <div className="prevent-select">
-              <h1 className="font-sora text-[24px] font-semibold ">L.O.C.C</h1>
-              <p className="font-sora text-xs font-semibold">
-                Light Olives Child Center.
-              </p>
-            </div>
-          </Link>
-          <nav className="hidden lg:flex items-center gap-6 ">
-            <Link href="/" className=" text-black text-lg">
-              <p
-                className={`${
-                  path === '/'
-                    ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2 text-[#EC6B00]'
-                    : ''
-                } bg-no-repeat bg-bottom `}
-              >
-                Home
-              </p>
-            </Link>
-            <Link href="/location" className=" text-black text-lg">
-              <p
-                className={`${
-                  path === '/location'
-                    ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2 text-[#E62074]'
-                    : ''
-                } bg-no-repeat bg-bottom`}
-              >
-                Location
-              </p>
-            </Link>
-            <Link href="/about" className=" text-black text-lg">
-              <p
-                className={`${
-                  path === '/about'
-                    ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2 text-[#35A76C]'
-                    : ''
-                } bg-no-repeat bg-bottom`}
-              >
-                About Us
-              </p>
-            </Link>
+    <>
+      {/* <div className="max-w-7xl m-auto flex justify-between items-center px-4 md:px-7 xl:px-2">
+        <div className="flex gap-4">
+          <div>
+            <p>
+              contact us: <a href="#">08038080480490</a>
+            </p>
+          </div>
+          <div>
+            <p>
+              email us: <a href="#">johndoe@gmail.com</a>
+            </p>
+          </div>
+        </div>
 
-            <Menu as="div" className="relative inline-block text-left ">
-              <div>
-                <MenuButton className="inline-flex w-full justify-center items-center text-lg text-black">
-                  <p
-                    className={`${
-                      path === '/infants' ||
-                      path === '/Toddlers' ||
-                      path === '/preschool'
-                        ? 'text-[#FDE812]'
-                        : ''
-                    }`}
-                  >
-                    Program
-                  </p>
+        <div>
 
-                  <ChevronDownIcon
-                    aria-hidden="true"
-                    className=" h-5 w-5 text-gray-400"
-                  />
-                </MenuButton>
+        </div>
+      </div> */}
+
+      <div className="font-main shadow-sm bg-white lg:sticky lg:top-0 z-50">
+        {open && <MobileNav handleOpen={handleOpen} />}
+        <div className="px-4 max-w-7xl m-auto md:px-7  xl:px-5 ">
+          <div className="py-2 flex items-center justify-between">
+            <Link href="/">
+              <div className="prevent-select">
+                <h1 className="font-sora text-[24px] font-semibold ">C1</h1>
+                <p className="font-sora text-xs font-semibold">CENTURY 1</p>
               </div>
-              <MenuItems
-                transition
-                className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
-              >
-                <div className="py-1">
-                  <MenuItem>
-                    <Link
-                      href="/infants"
-                      className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                    >
-                      Infants
-                    </Link>
-                  </MenuItem>
-                  <MenuItem>
-                    <Link
-                      href="/Toddlers"
-                      className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                    >
-                      Toddlers
-                    </Link>
-                  </MenuItem>
-                  <MenuItem>
-                    <Link
-                      href="/preschool"
-                      className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                    >
-                      Pre-School & Kindergarten
-                    </Link>
-                  </MenuItem>
-                </div>
-              </MenuItems>
-            </Menu>
-
-            <Link href="/contact" className=" text-black text-lg">
-              <p
-                className={`${
-                  path === '/contact'
-                    ? 'bg-[url(https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Ellipse%201.svg?updatedAt=1725673068993)] p-2 text-[#37A7DF]'
-                    : ''
-                } bg-no-repeat bg-bottom`}
-              >
-                Contact Us
-              </p>
             </Link>
-          </nav>
-          <Link href="/contact">
-            <button className="bg-[#E62074] text-white hidden lg:block py-[16px] px-[24px] rounded-lg ">
-              Stay in Touch
-            </button>
-          </Link>
-          {/* <button className="lg:hidden border border-gray-800 rounded-full p-3">
+            <nav className="hidden lg:flex items-center gap-6 ">
+              <Link
+                href="/"
+                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all"
+              >
+                <IoIosHome
+                  className={`text-md ${path === '/' ? 'text-[#d23e3e]' : ''}`}
+                />
+                <p
+                  className={`${
+                    path === '/' ? '  text-[#d23e3e]' : ''
+                  } bg-no-repeat bg-bottom`}
+                >
+                  Home
+                </p>
+              </Link>
+
+              <Link
+                href="/location"
+                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all"
+              >
+                <FaLocationDot
+                  className={`${path === '/location' ? 'text-[#d23e3e]' : ''}`}
+                />
+                <p
+                  className={`${
+                    path === '/location' ? '  text-[#d23e3e]' : ''
+                  } bg-no-repeat bg-bottom`}
+                >
+                  Location
+                </p>
+              </Link>
+              <Link
+                href="/about"
+                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all"
+              >
+                <MdGroups2
+                  className={` text-lg ${path === '/about' ? 'text-[#d23e3e]' : ''} `}
+                />
+                <p
+                  className={`${
+                    path === '/about' ? '  text-[#d23e3e]' : ''
+                  } bg-no-repeat bg-bottom`}
+                >
+                  About Us
+                </p>
+              </Link>
+
+              <Menu as="div" className="relative inline-block text-left ">
+                <div>
+                  <MenuButton className="inline-flex gap-2 w-full justify-center items-center text-sm text-black hover:text-[#d23e3e] transition-all">
+                    <FaCog
+                      className={`${path === '' ? 'text-[#d23e3e]' : ''} text-md`}
+                    />
+                    <p
+                      className={`${
+                        path === '/infants' ||
+                        path === '/Toddlers' ||
+                        path === '/preschool'
+                          ? 'text-[#FDE812]'
+                          : ''
+                      }`}
+                    >
+                      Services
+                    </p>
+
+                    <ChevronDownIcon
+                      aria-hidden="true"
+                      className=" h-5 w-5 text-gray-400"
+                    />
+                  </MenuButton>
+                </div>
+                <MenuItems
+                  transition
+                  className="absolute right-0 top-[2rem] z-10 mt-2 w-[60rem] origin-center rounded-md bg-white 
+                  shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none \
+                  data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 
+                  data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in "
+                >
+                  <div className="py-1 flex justify-between">
+                    <div>
+                      <MenuItem>
+                        <h2 className="block px-4 py-2 text-md text-gray-700">
+                          <span className="">CNG services</span>
+                        </h2>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/infants"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Infants
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/Toddlers"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Toddlers
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/preschool"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Pre-School & Kindergarten
+                        </Link>
+                      </MenuItem>
+                    </div>
+
+                    <div>
+                      <MenuItem>
+                        <Link
+                          href="/infants"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Infants
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/Toddlers"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Toddlers
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/preschool"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Pre-School & Kindergarten
+                        </Link>
+                      </MenuItem>
+                    </div>
+
+                    <div>
+                      <MenuItem>
+                        <Link
+                          href="/infants"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Infants
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/Toddlers"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Toddlers
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/preschool"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Pre-School & Kindergarten
+                        </Link>
+                      </MenuItem>
+                    </div>
+                  </div>
+                </MenuItems>
+              </Menu>
+
+              <Link
+                href="/contact"
+                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all"
+              >
+                <IoIosMail
+                  className={`text-lg ${path === '/contact' ? 'text-[#d23e3e]' : ''}`}
+                />
+                <p
+                  className={`${
+                    path === '/contact' ? '  text-[#d23e3e]' : ''
+                  } bg-no-repeat bg-bottom`}
+                >
+                  Contact Us
+                </p>
+              </Link>
+            </nav>
+            {/* <Link href="/contact">
+              <button className="bg-[#E62074] text-white hidden lg:block py-[16px] px-[24px] rounded-lg ">
+                Stay in Touch
+              </button>
+            </Link> */}
+            {/* <button className="lg:hidden border border-gray-800 rounded-full p-3">
             <RxHamburgerMenu />
           </button> */}
-          {/* mobile nav */}
-          <div className="lg:hidden cursor-pointer" onClick={handleOpen}>
-            {open ? (
-              <IoIosClose className="hidden" />
-            ) : (
-              <RxHamburgerMenu className="border border-gray-800 rounded-full w-8 h-8 p-2" />
-            )}
+
+            {/* mobile nav */}
+            <div className="lg:hidden cursor-pointer" onClick={handleOpen}>
+              {open ? (
+                <IoIosClose className="hidden" />
+              ) : (
+                <RxHamburgerMenu className="border border-gray-800 rounded-full w-8 h-8 p-2" />
+              )}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };

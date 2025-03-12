@@ -20,9 +20,9 @@ export default function Home() {
         />
       </Head>
       <Nav />
-      <section className="pb-5 md:pb-20">
+      <section className="pb-5 md:pb-20 bg-black h-screen bg-[url('https://ik.imagekit.io/h6pmd5ivo/century%201/dean-brierley-2987j1bsfxo-unsplash.jpg?updatedAt=1741814715805')] bg-cover bg-center bg-no-repeat">
         <div className="max-w-[30rem]  md:max-w-7xl m-auto px-4 py-9 md:py-0 flex flex-col gap-8 md:flex-row md:justify-evenly md:items-center xl:px-0">
-          <div className="space-y-4 md:space-y-6 md:flex-1 lg:flex-auto lg:pl-3 ">
+          <div className=" space-y-4 md:space-y-6 md:flex-1 lg:flex-auto lg:pl-3 ">
             <h1 className="font-bold text-[30px] md:text-[40px] lg:text-[55px] xl:text-[70px] text-balance leading-tight">
               Leading the Way <br className="hidden lg:block" /> in{' '}
               <span className="text-[#E62074]">Child {''}</span>
@@ -38,7 +38,8 @@ export default function Home() {
               Enquire Now
             </button>
           </div>
-          <div className="md:flex-1 lg:flex-auto ">
+
+          {/* <div className="md:flex-1 lg:flex-auto ">
             <img
               src={
                 'https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Rectangle%206.png?updatedAt=1725631706690'
@@ -46,7 +47,7 @@ export default function Home() {
               className="xl:h-[600px] object-cover object-center xl:w-[700px]"
               alt="heroimg"
             />
-          </div>
+          </div> */}
         </div>
       </section>
 

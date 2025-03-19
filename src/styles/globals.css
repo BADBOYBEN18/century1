@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 .prevent-select {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -18,6 +22,60 @@
 }
 .footer-p p {
   font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .animation {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  .animation3 {
+    animation: appear3 ease-out; /* Smoother easing */
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    will-change: opacity, transform;
+  }
+}
+
+.animation2 {
+  animation: appear2 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  will-change: opacity, transform;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes appear2 {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear3 {
+  from {
+    opacity: 0;
+    transform: scale(0.5) translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
@@ -40,14 +41,19 @@ export const Nav = () => {
         </div>
       </div> */}
 
-      <div className="font-main shadow-sm bg-white lg:sticky lg:top-0 z-50">
+      <div className="font-main shadow-sm bg-white lg:bg-white/10 lg:backdrop-blur-lg border-b border-white/20 sticky top-0 z-50 py-1 md:py-2 lg:py-4">
         {open && <MobileNav handleOpen={handleOpen} />}
-        <div className="px-4 max-w-7xl m-auto md:px-7  xl:px-5 ">
+        <div className="px-4  max-w-7xl m-auto md:px-7  xl:px-5 ">
           <div className="py-2 flex items-center justify-between">
             <Link href="/">
               <div className="prevent-select">
-                <h1 className="font-sora text-[24px] font-semibold ">C1</h1>
-                <p className="font-sora text-xs font-semibold">CENTURY 1</p>
+                <img
+                  src="https://ik.imagekit.io/h6pmd5ivo/century%201/CENTURY1LOGO.svg?updatedAt=1742072488748"
+                  width={110}
+                  height={110}
+                  // className="w-20 h-20"
+                  alt=""
+                />
               </div>
             </Link>
             <nav className="hidden lg:flex items-center gap-6 ">
@@ -100,12 +106,12 @@ export const Nav = () => {
 
               <Menu as="div" className="relative inline-block text-left ">
                 <div>
-                  <MenuButton className="inline-flex gap-2 w-full justify-center items-center text-sm text-black hover:text-[#d23e3e] transition-all">
+                  <MenuButton className="inline-flex w-full justify-center items-center text-sm text-black hover:text-[#d23e3e] transition-all">
                     <FaCog
                       className={`${path === '' ? 'text-[#d23e3e]' : ''} text-md`}
                     />
                     <p
-                      className={`${
+                      className={`ml-1 ${
                         path === '/infants' ||
                         path === '/Toddlers' ||
                         path === '/preschool'
@@ -115,10 +121,9 @@ export const Nav = () => {
                     >
                       Services
                     </p>
-
                     <ChevronDownIcon
                       aria-hidden="true"
-                      className=" h-5 w-5 text-gray-400"
+                      className=" h-5 w-5 text-black hover:text-[#d23e3e] transition-all"
                     />
                   </MenuButton>
                 </div>
@@ -245,7 +250,7 @@ export const Nav = () => {
           </button> */}
 
             {/* mobile nav */}
-            <div className="lg:hidden cursor-pointer" onClick={handleOpen}>
+            <div className=" lg:hidden cursor-pointer" onClick={handleOpen}>
               {open ? (
                 <IoIosClose className="hidden" />
               ) : (

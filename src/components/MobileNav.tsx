@@ -11,7 +11,6 @@ import { IoIosClose } from 'react-icons/io';
 
 const MobileNav = ({ handleOpen }: any) => {
   const path = usePathname();
-
   const router = useRouter();
 
   const navigate = (path: string) => {
@@ -20,14 +19,17 @@ const MobileNav = ({ handleOpen }: any) => {
   };
 
   return (
-    <div className="bg-white lg:hidden  text-black items-center h-full fixed  z-[99] py-9 px-4 md:px-[3rem] w-full overflow-y-scroll md:overflow-y-hidden">
-      <div className="flex justify-between mb-[4rem]">
+    <div className="bg-white lg:hidden shadow-md text-black items-center h-full fixed  z-[99] py-5 px-4 md:px-[3rem] w-full overflow-y-scroll md:overflow-y-hidden">
+      <div className="flex justify-between mb-[2rem]">
         <Link href="/">
           <div className="">
-            <h1 className="font-sora text-[24px] font-semibold ">L.O.C.C</h1>
-            <p className="font-sora text-xs font-semibold">
-              Light Olives Child Center.
-            </p>
+            <img
+              src="https://ik.imagekit.io/h6pmd5ivo/century%201/CENTURY1LOGO.svg?updatedAt=1742072488748"
+              width={110}
+              height={110}
+              // className="w-20 h-20"
+              alt=""
+            />
           </div>
         </Link>
         <button onClick={handleOpen}>
@@ -72,7 +74,7 @@ const MobileNav = ({ handleOpen }: any) => {
                     : ''
                 }`}
               >
-                Program
+                Services
               </p>
 
               <ChevronDownIcon
@@ -91,7 +93,7 @@ const MobileNav = ({ handleOpen }: any) => {
                   className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                   onClick={() => navigate('/infants')}
                 >
-                  <p> Infants</p>
+                  <p> Cng solutions</p>
                 </a>
               </MenuItem>
               <MenuItem>
@@ -99,7 +101,7 @@ const MobileNav = ({ handleOpen }: any) => {
                   className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                   onClick={() => navigate('/Toddlers')}
                 >
-                  <p>Toddlers</p>
+                  <p>pipeline</p>
                 </a>
               </MenuItem>
               <MenuItem>
@@ -107,7 +109,7 @@ const MobileNav = ({ handleOpen }: any) => {
                   className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                   onClick={() => navigate('/preschool')}
                 >
-                  <p> Pre-School & Kindergarten</p>
+                  <p> oil and gas</p>
                 </a>
               </MenuItem>
             </div>
@@ -118,7 +120,7 @@ const MobileNav = ({ handleOpen }: any) => {
         <br />
         <a
           onClick={() => navigate('/contact')}
-          className={`${path === '/contact' ? 'text-[#37A7DF]' : ''}`}
+          className={`${path === '/contact' ? 'text-[#d23e3e]' : ''}`}
         >
           <p>Contact Us</p>
         </a>

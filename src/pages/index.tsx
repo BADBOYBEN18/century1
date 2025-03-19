@@ -5,6 +5,18 @@ import { Footer } from '@/components/Footer';
 import { Nav } from '@/components/Nav';
 import Head from 'next/head';
 import Link from 'next/link';
+import { FaArrowRight } from 'react-icons/fa';
+import Card from '@/components/Card';
+
+// imports for the cards
+import { IoMdCog } from 'react-icons/io';
+import { FaRegClock } from 'react-icons/fa6';
+import { MdOutlineChangeCircle } from 'react-icons/md';
+import { GiWorld } from 'react-icons/gi';
+import { FaHandshake } from 'react-icons/fa';
+import { BriefcaseIcon } from '@heroicons/react/20/solid';
+
+// import vid from '../../public/century1video.mp4';
 // import Link from 'next/link';
 
 export default function Home() {
@@ -20,40 +32,68 @@ export default function Home() {
         />
       </Head>
       <Nav />
-      <section className="pb-5 md:pb-20 bg-black h-screen bg-[url('https://ik.imagekit.io/h6pmd5ivo/century%201/dean-brierley-2987j1bsfxo-unsplash.jpg?updatedAt=1741814715805')] bg-cover bg-center bg-no-repeat">
-        <div className="max-w-[30rem]  md:max-w-7xl m-auto px-4 py-9 md:py-0 flex flex-col gap-8 md:flex-row md:justify-evenly md:items-center xl:px-0">
-          <div className=" space-y-4 md:space-y-6 md:flex-1 lg:flex-auto lg:pl-3 ">
-            <h1 className="font-bold text-[30px] md:text-[40px] lg:text-[55px] xl:text-[70px] text-balance leading-tight">
-              Leading the Way <br className="hidden lg:block" /> in{' '}
-              <span className="text-[#E62074]">Child {''}</span>
-              Development <br className="hidden lg:block" /> & Education
-              <span className="text-[#E62074]">.</span>
-            </h1>
-            <p className="text-txtcolor text-balance text-sm lg:text-[18px]">
-              We promote active minds and happy moments with our learning and
-              care approach while keeping your child’s safety and well-being our
-              number one priority.
-            </p>
-            <button className="bg-[#3B465C] text-white text-[12px] md:text-[14px] py-[9px] md:py-[12px] px-[24px] lg:py-[15px] lg:px-[32px] rounded-lg ">
-              Enquire Now
-            </button>
-          </div>
 
-          {/* <div className="md:flex-1 lg:flex-auto ">
-            <img
-              src={
-                'https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Rectangle%206.png?updatedAt=1725631706690'
-              }
-              className="xl:h-[600px] object-cover object-center xl:w-[700px]"
-              alt="heroimg"
+      <section className=" pb-5 md:pb-9 lg:pb-16  xl:max-w-7xl m-auto ">
+        <div className="px-2 md:px-4 mt-3 lg:mt-0">
+          <video
+            autoPlay
+            loop
+            muted
+            className=" w-screen h-auto rounded-lg shadow-lg object-cover object-center"
+          >
+            <source
+              src="https://ik.imagekit.io/h6pmd5ivo/century%201/century%201%20video.mp4?updatedAt=1741799154023"
+              type="video/mp4"
             />
-          </div> */}
+          </video>
         </div>
       </section>
 
-      <section className="pb-14 md:pb-40">
-        <div className="px-3 max-w-7xl m-auto">
-          <h1 className="text-[#E62074] text-[15px] md:text-[20px] lg:text-[30px] text-center mb-6 ">
+      <section className=" pb-14 md:pb-20 lg:pb-32">
+        <div className="animation  px-7 max-w-7xl m-auto">
+          <div className=" flex flex-col gap-x-6 sm:flex-row-reverse">
+            <img
+              src="https://ik.imagekit.io/h6pmd5ivo/century%201/anotherone.jpg?updatedAt=1741904825508"
+              alt="feature 1"
+              className="hidden w-1/2 sm:block"
+            />
+            <div className="sm:w-1/2 lg:py-[56px] lg:pr-[56px]">
+              <h1 className="pt-3 text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px]">
+                About{' '}
+                <span className="text-[#4dbf88]">
+                  Century<span className="text-[#e53344]">1</span>
+                </span>{' '}
+                Limited <br className="hidden xl:max-xl:block" />{' '}
+              </h1>
+              <img
+                src="https://ik.imagekit.io/h6pmd5ivo/century%201/anotherone.jpg?updatedAt=1741904825508"
+                alt="feature image"
+                className="pt-[24px] sm:hidden"
+              />
+              <p className="py-[24px] text-[#36485C] text-[12px] lg:text-[18px] md:text-justify">
+                Century1 Limited (PCL) is a premier Oil and Energy service
+                company serving the Energy sector since 2011. We specialize in
+                Engineering, Procurement, and Construction (EPC) services and a
+                wide range of other essential services to support the energy
+                industry. Our highly skilled team operates globally, with
+                offices and manufacturing facilities in China and the UK. We
+                leverage international best practices and innovations, supported
+                by strategic partnerships with technical experts worldwide. Our
+                subsidiaries, PCL-Power and PCL-Gas, are dedicated to driving
+                the energy transition in Africa by providing innovative and
+                sustainable energy solutions.
+              </p>
+
+              <button className="text-[#4dbf88] rounded-md lg:p-4 font-medium flex items-center gap-2 lg:text-[18px] transition-all lg:duration-300 p-2 duration-30 focus:bg-black/90  active:bg-black/50  lg:hover:bg-black/90 lg:hover:-translate-y-2 lg:hover:p-4">
+                Learn More
+                <span className="border border-[#e53344] rounded-full w-6 h-6 flex justify-center items-center">
+                  <FaArrowRight className="text-[#e53344] " />
+                </span>
+              </button>
+            </div>
+          </div>
+
+          {/* <h1 className="text-[#E62074] text-[15px] md:text-[20px] lg:text-[30px] text-center mb-6 ">
             Choose one of our programs for your child
           </h1>
 
@@ -126,48 +166,67 @@ export default function Home() {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
       <section className="pb-14 lg:pb-[200px]">
-        <div className=" max-w-[23rem] md:max-w-7xl m-auto flex flex-col-reverse items-center gap-2 md:items-start justify-center px-4 md:flex-row">
-          <div className="flex-1 mt-4 md:mt-0">
-            <img
-              src="https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Rectangle%2016.png?updatedAt=1725631706230"
-              className="lg:max-xl:rounded-md lg:max-xl:h-[500px] object-cover object-center"
-              alt=""
-            />
-          </div>
-          <div className="flex-1 hidden lg:block">
-            <img
-              src="https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Rectangle%2012.png?updatedAt=1725631705859"
-              className="hidden lg:block lg:max-xl:rounded-md lg:max-xl:h-[500px] object-cover object-center"
-              alt=""
-            />
-          </div>
-          <div className="flex-1  md:ml-2 lg:ml-5">
-            <h1 className="text-[#EC6B00] font-medium text-[25px] lg:text-[40px] mb-4">
-              Who are we?
+        <div className="  sm:max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap md:items-start justify-left px-4 md:flex-row">
+          <div>
+            <h1 className="uppercase text-center sm:text-balance text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px] pb-2">
+              <span className="text-[#4dbf88]">
+                Century<span className="text-[#e53344]">1</span>
+              </span>{' '}
+              Limited at a glance
             </h1>
-            <p className="text-txtcolor text-[12px] md:text-[14px] lg:text-[16px] mb-4">
-              With over 21 Light Olives locations across the Greater Toronto
-              Area and over 30 years of providing outstanding childcare, we’re
-              proud to provide full and part-time care for enhanced and enriched
-              learning for children ages newborn to 12 years old.
-            </p>
-            <p className="text-txtcolor text-[12px] md:text-[14px] lg:text-[16px] mb-4">
-              We nurture curiosity, confidence, and creativity to empower your
-              child through some of the biggest learning moments!
-            </p>
-            <p className="text-txtcolor text-[12px] md:text-[14px] lg:text-[16px] mb-7">
-              Your child’s safety and well-being are our top priorities at Light
-              Olives. We go above and beyond to create the right environment to
-              keep everyone safe.
-            </p>
-            <button className="bg-[#3B465C]  text-white text-[12px] md:text-[14px] lg:text-[16px] py-[9px] md:py-[12px] px-[24px] lg:px-[32px] rounded-lg ">
-              Read More
-            </button>
+            <div className=" border-2 border-[#e53344] mb-5 max-w-10 mx-auto"></div>
+          </div>
+
+          <div className="text-center sm:text-pretty grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Card
+              icon={<FaRegClock className="w-10 h-10" />}
+              backgroundColorClass="bg-[#4dbf88]"
+              iconTitle="Established in 2011"
+              title=""
+              description="Founded to serve the upstream oil and gas sector, Century1 Limited has since expanded to offer diverse energy solutions through specialized subsidiaries. "
+            />
+            <Card
+              icon={<MdOutlineChangeCircle className="w-10 h-10" />}
+              backgroundColorClass="bg-[#4dbf88]"
+              iconTitle="Sustainability drive"
+              title=""
+              description="Century1 Limited is dedicated to promoting greener energy practices, helping to reduce carbon footprints and drive sustainable development globally."
+            />
+            <Card
+              icon={<GiWorld className="w-10 h-10" />}
+              backgroundColorClass="bg-[#4dbf88]"
+              iconTitle="Multinational"
+              title=""
+              description="Our dedicated teams operate in China, Nigeria, and the UK, bringing together expertise and innovation to meet diverse client needs."
+            />
+            <Card
+              icon={<IoMdCog className="w-10 h-10" />}
+              backgroundColorClass="bg-[#4dbf88]"
+              iconTitle="Leading-Edge Technology"
+              title=""
+              description="We utilize advanced technology in our products and services, ensuring efficiency, safety, and reliability in all our energy solutions. "
+            />
+            <Card
+              icon={<FaHandshake className="w-10 h-10" />}
+              backgroundColorClass="bg-[#4dbf88]"
+              iconTitle="Our Subsidiaries"
+              title=""
+              description="Our subsidiaries, PCL Power and PCL Gas, specialize in renewable energy and gas infrastructure, ensuring comprehensive solutions for a sustainable future."
+            />
+            <Card
+              icon={<BriefcaseIcon className="w-10 h-10" />}
+              backgroundColorClass="bg-[#4dbf88]"
+              iconTitle="Expertise & Experience
+"
+              title=""
+              description="
+Driven by a team of industry-leading professionals with extensive experience, our services consistently exceed expectations for quality and reliability."
+            />
           </div>
         </div>
       </section>

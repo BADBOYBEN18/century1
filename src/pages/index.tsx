@@ -39,6 +39,7 @@ export default function Home() {
             autoPlay
             loop
             muted
+            controls
             className=" w-screen h-auto rounded-lg shadow-lg object-cover object-center"
           >
             <source
@@ -184,7 +185,7 @@ export default function Home() {
 
           <div className="text-center sm:text-pretty grid grid-cols-1 md:grid-cols-3 gap-4">
             <Card
-              icon={<FaRegClock className="w-10 h-10" />}
+              icon={<FaRegClock className="w-9 h-9" />}
               backgroundColorClass="bg-[#4dbf88]"
               iconTitle="Established in 2011"
               title=""

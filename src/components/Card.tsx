@@ -36,15 +36,7 @@ const Card: React.FC<CardProps> = ({
       {/* Text Section */}
       <div className="p-4">
         <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
-        <p className="text-gray-600">{description}</p>
-        {/* Optional Button */}
-        {/* {buttonText && (
-          <div className="mt-4">
-            <button className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-              {buttonText}
-            </button>
-          </div>
-        )} */}
+        <p className="text-black/90 text-[12px] sm:text-sm">{description}</p>
       </div>
     </div>
   );

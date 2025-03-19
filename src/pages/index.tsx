@@ -43,8 +43,8 @@ export default function Home() {
             className=" w-screen h-auto rounded-lg shadow-lg object-cover object-center"
           >
             <source
-              src="https://ik.imagekit.io/h6pmd5ivo/century%201/century1video.mp4?updatedAt=1742391767809"
-              type="video/mp4"
+              src="https://ik.imagekit.io/h6pmd5ivo/century%201/century1webformat.webm/ik-video.mp4?updatedAt=1742392286395"
+              type="video/webm"
             />
           </video>
         </div>

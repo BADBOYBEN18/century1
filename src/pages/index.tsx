@@ -43,7 +43,7 @@ export default function Home() {
             className=" w-screen h-auto rounded-lg shadow-lg object-cover object-center"
           >
             <source
-              src="https://ik.imagekit.io/h6pmd5ivo/century%201/century%201%20video.mp4?updatedAt=1741799154023"
+              src="https://ik.imagekit.io/h6pmd5ivo/century%201/century1video.mp4?updatedAt=1742391767809"
               type="video/mp4"
             />
           </video>
@@ -171,7 +171,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pb-14 lg:pb-[200px]">
+      <section className="pb-14 lg:pb-[100px]">
         <div className="  sm:max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap md:items-start justify-left px-4 md:flex-row">
           <div>
             <h1 className="uppercase text-center sm:text-balance text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px] pb-2">

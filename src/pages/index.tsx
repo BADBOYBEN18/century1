@@ -4,9 +4,10 @@
 import { Footer } from '@/components/Footer';
 import { Nav } from '@/components/Nav';
 import Head from 'next/head';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import Card from '@/components/Card';
+import ServiceCard from '@/components/ServiceCard';
 
 // imports for the cards
 import { IoMdCog } from 'react-icons/io';
@@ -15,6 +16,7 @@ import { MdOutlineChangeCircle } from 'react-icons/md';
 import { GiWorld } from 'react-icons/gi';
 import { FaHandshake } from 'react-icons/fa';
 import { BriefcaseIcon } from '@heroicons/react/20/solid';
+// import Image from 'next/image';
 
 // import vid from '../../public/century1video.mp4';
 // import Link from 'next/link';
@@ -67,10 +69,11 @@ export default function Home() {
                 Limited <br className="hidden xl:max-xl:block" />{' '}
               </h1>
               <img
-                src="https://ik.imagekit.io/h6pmd5ivo/century%201/anotherone.jpg?updatedAt=1741904825508"
+                src="https://ik.imagekit.io/h6pmd5ivo/century%201/anotherone.jpg?updatedAt=1742405455263"
                 alt="feature image"
                 className="pt-[24px] sm:hidden"
               />
+
               <p className="py-[24px] text-[#36485C] text-[12px] lg:text-[18px] md:text-justify">
                 Century1 Limited (PCL) is a premier Oil and Energy service
                 company serving the Energy sector since 2011. We specialize in
@@ -93,81 +96,6 @@ export default function Home() {
               </button>
             </div>
           </div>
-
-          {/* <h1 className="text-[#E62074] text-[15px] md:text-[20px] lg:text-[30px] text-center mb-6 ">
-            Choose one of our programs for your child
-          </h1>
-
-          <div className="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap  items-center justify-center gap-4 ">
-            <div className="w-[350px] md:w-[350px] md:h-[320px]   xl:w-[450px] lg:h-[400px]  md:flex md:flex-col items-start justify-center   space-y-3 lg:space-y-0 bg-[#FDE81280] rounded-xl p-4  lg:p-5 ">
-              <div className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px]  grid items-center justify-center  p-2 lg:mb-[20px] xl:mb-[32px]  rounded-lg bg-white">
-                <img
-                  src="https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Icons_BabyCrawling.png?updatedAt=1725631701155"
-                  alt=""
-                />
-              </div>
-              <div className="flex flex-col justify-center items-start ">
-                <h1 className="font-medium text-[16px] lg:mb-[10px] xl:mb-[20px] lg:text-[20px] xl:text-[24px]">
-                  Infant Program (0-18 months)
-                </h1>
-                <p className="text-txtcolor text-[12px] lg:text-[15px] pb-4  ">
-                  Our infant program provides a safe and nurturing environment
-                  where babies can explore and grow. With a focus on sensory
-                  play, motor skill development, and individualized care, we
-                  ensure each child receives the attention they need to thrive.
-                </p>
-                <button className="bg-white text-black text-[12px] md:text-[10px] lg:text-[14px] py-[9px] md:py-[12px] px-[24px] lg:px-[32px] rounded-lg ">
-                  Learn More
-                </button>
-              </div>
-            </div>
-
-            <div className="w-[350px] md:w-[350px] md:h-[320px]  xl:w-[450px] lg:h-[400px]  md:flex md:flex-col items-start justify-center   space-y-3 lg:space-y-0 bg-[#EC6B0080] rounded-xl p-4  lg:p-5">
-              <div className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] grid items-center justify-center p-2 lg:mb-[20px] xl:mb-[32px] rounded-lg bg-white">
-                <img
-                  src="https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Book--Icon.png?updatedAt=1725631701064"
-                  alt=""
-                />
-              </div>
-              <div className="flex flex-col justify-center items-start">
-                <h1 className="font-medium text-[16px] lg:mb-[10px] xl:mb-[10px] lg:text-[20px] xl:text-[24px]">
-                  Toddler Program (18 months - 2.5 years)
-                </h1>
-                <p className="text-txtcolor text-[12px] lg:text-[15px] pb-4">
-                  In our toddler program, we encourage curiosity and creativity
-                  through play-based learning. Our experienced educators help
-                  toddlers develop their language, social, and cognitive skills
-                  in a fun and interactive setting.
-                </p>
-                <button className="bg-white text-black text-[12px] md:text-[10px] lg:text-[14px] py-[9px] md:py-[12px] px-[24px] lg:px-[32px] xl: rounded-lg ">
-                  Learn More
-                </button>
-              </div>
-            </div>
-
-            <div className="w-[350px] md:w-[350px] md:h-[320px]   xl:w-[450px] lg:h-[400px] md:flex md:flex-col items-start justify-center    space-y-3 lg:space-y-0 bg-[#37A7DF80] rounded-xl p-4  lg:p-5">
-              <div className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] grid items-center justify-center p-2 lg:mb-[20px] xl:mb-[32px] rounded-lg bg-white">
-                <img
-                  src="https://ik.imagekit.io/h6pmd5ivo/L.O.C.C%20images/Idea.png?updatedAt=1725631701147"
-                  alt=""
-                />
-              </div>
-              <div className="flex flex-col justify-center items-start">
-                <h1 className="font-medium text-[16px] lg:mb-[10px] xl:mb-[20px] lg:text-[20px] xl:text-[24px]">
-                  Preschool Program (2.5 - 4 years)
-                </h1>
-                <p className="text-txtcolor text-[12px] lg:text-[15px] pb-4 ">
-                  Our preschool program prepares children for kindergarten by
-                  fostering independence, problem-solving skills, and early
-                  literacy. Children engage in hands-on activities that promote
-                  both learning and self-expression.
-                </p>
-                <button className="bg-white text-black text-[12px] md:text-[10px] lg:text-[14px] py-[9px] md:py-[12px] px-[24px] lg:px-[32px] rounded-lg ">
-                  Learn More
-                </button>
-              </div>
-            </div>
-          </div> */}
         </div>
       </section>
 
@@ -233,25 +161,46 @@ Driven by a team of industry-leading professionals with extensive experience, ou
       </section>
 
       <section className="pb-14 lg:pb-[160px]">
-        <div className="max-w-[30rem]  md:max-w-4xl lg:max-w-7xl m-auto px-4 text-center space-y-4 md:space-y-8">
-          <h1 className="text-[#37A7DF] text-[20px] md:text-[25px] lg:text-[40px]">
-            We&apos;ve got your child&apos;s safety &{' '}
-            <br className="hidden lg:block" /> well-being covered.
-          </h1>
-          <p className="text-txtcolor text-[12px] md:text-[14px] lg:text-[16px] pb-5">
-            To learn more about one of our world class centres serving you in
-            your area, <br className="hidden md:block" /> please see our{' '}
-            <Link href="/location">
-              <span className="text-[#E62074]">locations page</span>
-            </Link>{' '}
-            or contact us about how we can <br className="hidden md:block" />{' '}
-            best care for your child.
-          </p>
-          <button className="bg-[#3B465C] text-white text-[12px] md:text-[14px] lg:text-[20px] py-[9px] md:py-[12px] px-[24px]  lg:px-[32px] rounded-lg ">
-            Enquire Now
-          </button>
+        <div className="sm:max-w-7xl mx-auto flex flex-col items-center justify-center gap-9 flex-wrap px-4 lg:px-7">
+          <div className="">
+            <h1 className="text-center border-2 max-w-[30rem] mx-auto border-black/90 p-3 shadow-md rounded-md uppercase  sm:text-balance text-[24px] font-medium text-[#172026] lg:leading-[58px] mb-4">
+              OUR COMPANY SERVICES
+            </h1>
+            <p className="text-[12px] sm:text-sm md:text-lg lg:text-justify">
+              Paradigm Creations Limited focuses on serving the upstream sector
+              of the oil and gas industry. Its specialized subsidiaries, PCL
+              Power and PCL Gas, expand its service offerings. PCL Power
+              delivers renewable energy solutions for industrial, commercial,
+              and residential applications, while PCL Gas manufactures and
+              supplies gas infrastructure, including CNG, LNG, LPG cylinders,
+              and tanks. These subsidiaries ensure Paradigm Creations provides
+              diverse, high-quality energy solutions across various sectors.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <ServiceCard
+              imageUrl="https://ik.imagekit.io/h6pmd5ivo/century%201/rsz_bigstock-131155118.jpg?updatedAt=1741904280048"
+              title="CENTURY1 SERVICES"
+              description="CENTURY1 Limited focuses on serving the upstream sector of the oil and gas industry, providing expert solutions tailored to exploration and production needs."
+              buttonText="LEARN MORE"
+            />
+            <ServiceCard
+              imageUrl="https://ik.imagekit.io/h6pmd5ivo/century%201/chris-leboutillier-TUJud0AWAPI-unsplash.jpg?updatedAt=1741814527809"
+              title="CENTURY1 POWER SERVICES"
+              description="PCL Power is dedicated to delivering renewable energy solutions for industrial, commercial, and residential applications.  PCL Power is committed to driving sustainable energy adoption and reducing carbon footprints."
+              buttonText="LEARN MORE"
+            />
+            <ServiceCard
+              imageUrl="https://ik.imagekit.io/h6pmd5ivo/century%201/pcl%20gas.png?updatedAt=1742406564716"
+              title="CENTURY1-GAS SERVICES"
+              description="PCL Gas, on the other hand, specializes in the manufacturing and supply of gas infrastructure. This includes CNG, LNG, and LPG cylinders and tanks, as well as Pressure Regulating Metering Skids (PRMS)."
+              buttonText="LEARN MORE"
+            />
+          </div>
         </div>
       </section>
+
       <Footer year={currentYear} />
     </div>
   );

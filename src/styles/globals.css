@@ -29,13 +29,12 @@
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
   }
+}
 
-  .animation3 {
-    animation: appear3 ease-out; /* Smoother easing */
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-    will-change: opacity, transform;
-  }
+.animation4 {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .animation2 {

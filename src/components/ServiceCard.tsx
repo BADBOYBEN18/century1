@@ -31,7 +31,7 @@ const ServiceCard: React.FC<CardProps> = ({
         <h2 className="text-xl font-semibold text-gray-800 mb-2 lg:mb-4">
           {title}
         </h2>
-        <p className="text-gray-600 text-[12px] sm:text-lg flex-grow">
+        <p className="text-gray-600 text-[12px] lg:text-lg flex-grow">
           {description}
         </p>
         {/* Optional Button */}

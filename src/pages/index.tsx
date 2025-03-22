@@ -1,28 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
-// import Image from 'next/image';
-
+import Head from 'next/head';
 import { Footer } from '@/components/Footer';
 import { Nav } from '@/components/Nav';
-import Head from 'next/head';
-// import Link from 'next/link';
+import { LogoTicker } from '@/components/LogoTicker';
 import { FaArrowRight } from 'react-icons/fa';
 import Card from '@/components/Card';
 import ServiceCard from '@/components/ServiceCard';
 
-// imports for the cards
+// Icons for the cards
 import { IoMdCog } from 'react-icons/io';
 import { FaRegClock } from 'react-icons/fa6';
 import { MdOutlineChangeCircle } from 'react-icons/md';
 import { GiWorld } from 'react-icons/gi';
 import { FaHandshake } from 'react-icons/fa';
 import { BriefcaseIcon } from '@heroicons/react/20/solid';
-// import Image from 'next/image';
 
-// import vid from '../../public/century1video.mp4';
-// import Link from 'next/link';
+const currentYear = new Date().getFullYear();
 
 export default function Home() {
-  const currentYear = new Date().getFullYear();
   return (
     <div className="font-main overflow-clip">
       <Head>
@@ -30,35 +25,31 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Homepage for light olives child care website"
+          content="Homepage for Century1 Limited, a premier Oil and Energy service company."
         />
       </Head>
+
       <Nav />
 
-      <section className=" pb-5 md:pb-9 lg:pb-16  xl:max-w-7xl m-auto ">
+      {/* Hero Section */}
+      <section className="pb-5 md:pb-9 lg:pb-16 xl:max-w-7xl mx-auto">
         <div className="px-2 md:px-4 mt-3 lg:mt-0">
-          <video
-            autoPlay
-            loop
-            muted
-            controls
-            className=" w-screen h-auto rounded-lg shadow-lg object-cover object-center"
-          >
-            <source
-              src="https://ik.imagekit.io/h6pmd5ivo/century%201/century1webformat.webm/ik-video.mp4?updatedAt=1742392286395"
-              type="video/webm"
-            />
-          </video>
+          {/* Video placeholder (commented out for now) */}
+          {/* <video autoPlay loop muted controls className="w-screen h-auto rounded-lg shadow-lg object-cover object-center">
+            <source src="https://ik.imagekit.io/h6pmd5ivo/century%201/century1webformat.webm/ik-video.mp4?updatedAt=1742392286395" type="video/webm" />
+          </video> */}
         </div>
       </section>
 
-      <section className=" pb-14 md:pb-20 lg:pb-32">
-        <div className="animation  px-7 max-w-7xl m-auto">
-          <div className=" flex flex-col gap-x-6 sm:flex-row-reverse">
+      {/* About Section */}
+      <section className="pb-14 md:pb-20 lg:pb-32">
+        <div className="animation px-7 max-w-7xl mx-auto">
+          <div className="flex flex-col gap-x-6 sm:flex-row-reverse">
             <img
               src="https://ik.imagekit.io/h6pmd5ivo/century%201/anotherone.jpg?updatedAt=1741904825508"
-              alt="feature 1"
+              alt="Century1 Limited"
               className="hidden w-1/2 sm:block"
+              loading="lazy"
             />
             <div className="sm:w-1/2 lg:py-[56px] lg:pr-[56px]">
               <h1 className="pt-3 text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px]">
@@ -66,12 +57,13 @@ export default function Home() {
                 <span className="text-[#4dbf88]">
                   Century<span className="text-[#e53344]">1</span>
                 </span>{' '}
-                Limited <br className="hidden xl:max-xl:block" />{' '}
+                Limited <br className="hidden xl:max-xl:block" />
               </h1>
               <img
                 src="https://ik.imagekit.io/h6pmd5ivo/century%201/anotherone.jpg?updatedAt=1742405455263"
-                alt="feature image"
+                alt="Century1 Limited"
                 className="pt-[24px] sm:hidden"
+                loading="lazy"
               />
 
               <p className="py-[24px] text-[#36485C] text-[12px] lg:text-[18px] md:text-justify">
@@ -88,10 +80,10 @@ export default function Home() {
                 sustainable energy solutions.
               </p>
 
-              <button className="text-[#4dbf88] rounded-md lg:p-4 font-medium flex items-center gap-2 lg:text-[18px] transition-all lg:duration-300 p-2 duration-30 focus:bg-black/90  active:bg-black/50  lg:hover:bg-black/90 lg:hover:-translate-y-2 lg:hover:p-4">
+              <button className="text-[#4dbf88] rounded-md lg:p-4 font-medium flex items-center gap-2 lg:text-[18px] transition-all lg:duration-300 p-2 duration-30 focus:bg-black/90 active:bg-black/50 lg:hover:bg-black/90 lg:hover:-translate-y-2 lg:hover:p-4">
                 Learn More
                 <span className="border border-[#e53344] rounded-full w-6 h-6 flex justify-center items-center">
-                  <FaArrowRight className="text-[#e53344] " />
+                  <FaArrowRight className="text-[#e53344]" />
                 </span>
               </button>
             </div>
@@ -99,8 +91,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* At a Glance Section */}
       <section className="pb-14 lg:pb-[100px]">
-        <div className="  sm:max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap md:items-start justify-left px-4 md:flex-row">
+        <div className="sm:max-w-7xl mx-auto flex flex-col items-center justify-center gap-2 flex-wrap px-4 md:flex-row">
           <div>
             <h1 className="uppercase text-center sm:text-balance text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px] pb-2">
               <span className="text-[#4dbf88]">
@@ -108,7 +101,7 @@ export default function Home() {
               </span>{' '}
               Limited at a glance
             </h1>
-            <div className=" border-2 border-[#e53344] mb-5 max-w-10 mx-auto"></div>
+            <div className="border-2 border-[#e53344] mb-5 max-w-10 mx-auto"></div>
           </div>
 
           <div className="text-center sm:text-pretty grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -116,57 +109,56 @@ export default function Home() {
               icon={<FaRegClock className="w-9 h-9" />}
               backgroundColorClass="bg-[#4dbf88]"
               iconTitle="Established in 2011"
-              title=""
-              description="Founded to serve the upstream oil and gas sector, Century1 Limited has since expanded to offer diverse energy solutions through specialized subsidiaries. "
+              description="Founded to serve the upstream oil and gas sector, Century1 Limited has since expanded to offer diverse energy solutions through specialized subsidiaries."
+              title={''}
             />
             <Card
               icon={<MdOutlineChangeCircle className="w-10 h-10" />}
               backgroundColorClass="bg-[#4dbf88]"
               iconTitle="Sustainability drive"
-              title=""
               description="Century1 Limited is dedicated to promoting greener energy practices, helping to reduce carbon footprints and drive sustainable development globally."
+              title={''}
             />
             <Card
               icon={<GiWorld className="w-10 h-10" />}
               backgroundColorClass="bg-[#4dbf88]"
               iconTitle="Multinational"
-              title=""
               description="Our dedicated teams operate in China, Nigeria, and the UK, bringing together expertise and innovation to meet diverse client needs."
+              title={''}
             />
             <Card
               icon={<IoMdCog className="w-10 h-10" />}
               backgroundColorClass="bg-[#4dbf88]"
               iconTitle="Leading-Edge Technology"
-              title=""
-              description="We utilize advanced technology in our products and services, ensuring efficiency, safety, and reliability in all our energy solutions. "
+              description="We utilize advanced technology in our products and services, ensuring efficiency, safety, and reliability in all our energy solutions."
+              title={''}
             />
             <Card
               icon={<FaHandshake className="w-10 h-10" />}
               backgroundColorClass="bg-[#4dbf88]"
               iconTitle="Our Subsidiaries"
-              title=""
               description="Our subsidiaries, PCL Power and PCL Gas, specialize in renewable energy and gas infrastructure, ensuring comprehensive solutions for a sustainable future."
+              title={''}
             />
             <Card
               icon={<BriefcaseIcon className="w-10 h-10" />}
               backgroundColorClass="bg-[#4dbf88]"
-              iconTitle="Expertise & Experience
-"
-              title=""
-              description="
-Driven by a team of industry-leading professionals with extensive experience, our services consistently exceed expectations for quality and reliability."
+              iconTitle="Expertise & Experience"
+              description="Driven by a team of industry-leading professionals with extensive experience, our services consistently exceed expectations for quality and reliability."
+              title={''}
             />
           </div>
         </div>
       </section>
 
-      <section className="pb-14 lg:pb-[160px]">
+      {/* Services Section */}
+      <section className="pb-14 sm:pb-20 lg:pb-[160px]">
         <div className="sm:max-w-7xl mx-auto flex flex-col items-center justify-center gap-9 flex-wrap px-4 lg:px-7">
-          <div className="">
-            <h1 className="text-center border-2 max-w-[30rem] mx-auto border-black/90 p-3 shadow-md rounded-md uppercase  sm:text-balance text-[24px] font-medium text-[#172026] lg:leading-[58px] mb-4">
+          <div className="sm:space-y-[2rem] lg:space-y-[2.5rem]">
+            <h1 className="text-center border-2 max-w-[30rem] mx-auto border-black/90 p-3 shadow-md rounded-md uppercase sm:text-balance text-[24px] font-medium text-[#172026] lg:leading-[58px] mb-4">
               OUR COMPANY SERVICES
             </h1>
-            <p className="text-[12px] sm:text-sm md:text-lg lg:text-justify">
+            <p className="text-[12px] sm:text-sm lg:text-lg lg:text-justify">
               Paradigm Creations Limited focuses on serving the upstream sector
               of the oil and gas industry. Its specialized subsidiaries, PCL
               Power and PCL Gas, expand its service offerings. PCL Power
@@ -188,7 +180,7 @@ Driven by a team of industry-leading professionals with extensive experience, ou
             <ServiceCard
               imageUrl="https://ik.imagekit.io/h6pmd5ivo/century%201/chris-leboutillier-TUJud0AWAPI-unsplash-min.jpg?updatedAt=1742515937562"
               title="CENTURY1 POWER SERVICES"
-              description="PCL Power is dedicated to delivering renewable energy solutions for industrial, commercial, and residential applications.  PCL Power is committed to driving sustainable energy adoption and reducing carbon footprints."
+              description="PCL Power is dedicated to delivering renewable energy solutions for industrial, commercial, and residential applications. PCL Power is committed to driving sustainable energy adoption and reducing carbon footprints."
               buttonText="LEARN MORE"
             />
             <ServiceCard
@@ -201,6 +193,12 @@ Driven by a team of industry-leading professionals with extensive experience, ou
         </div>
       </section>
 
+      {/* Logo Ticker Section */}
+      <section className="pb-14 lg:pb-[160px]">
+        <LogoTicker />
+      </section>
+
+      {/* Footer Section */}
       <Footer year={currentYear} />
     </div>
   );

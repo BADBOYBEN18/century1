@@ -21,7 +21,7 @@ const Card: React.FC<CardProps> = ({
   return (
     <div
       className={`max-w-full mx-auto ${backgroundColorClass}
-     rounded-lg shadow-lg overflow-hidden py-4 my-4 md:my-2 animation2 cursor-pointer`}
+     rounded-lg shadow-lg overflow-hidden py-4 my-4 md:my-2 animation2 cursor-pointer border-2 border-black`}
     >
       {/* Image Section */}
       <div className="flex flex-col items-center justify-center gap-4 relative group">

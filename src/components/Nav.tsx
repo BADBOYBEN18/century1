@@ -38,7 +38,8 @@ export const Nav = () => {
   return (
     <>
       <div className="font-main shadow-sm bg-white lg:bg-white/10 lg:backdrop-blur-lg border-b border-white/20 sticky top-0 z-50 py-1 md:py-2 lg:py-4">
-        {open && <MobileNav handleOpen={handleOpen} />}
+        {/* Mobile Nav with Animation */}
+        <MobileNav handleOpen={handleOpen} isOpen={open} />
         <div className="px-4 max-w-7xl m-auto md:px-7 xl:px-5">
           <div className="py-2 flex items-center justify-between">
             <Link href="/">
@@ -52,6 +53,7 @@ export const Nav = () => {
               </div>
             </Link>
             <nav className="hidden lg:flex items-center gap-6">
+              {/* Desktop Navigation Links */}
               <Link
                 href="/"
                 className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all"
@@ -83,6 +85,7 @@ export const Nav = () => {
                   Location
                 </p>
               </Link>
+
               <Link
                 href="/about"
                 className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all"
@@ -236,7 +239,7 @@ export const Nav = () => {
             {/* Mobile Nav Toggle Button */}
             <div className="lg:hidden cursor-pointer" onClick={handleOpen}>
               {open ? (
-                <IoIosClose className="hidden" />
+                <IoIosClose className="w-8 h-8" />
               ) : (
                 <RxHamburgerMenu className="border border-gray-800 rounded-full w-8 h-8 p-2" />
               )}

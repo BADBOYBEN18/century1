@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @next/next/no-img-element */
-
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { usePathname } from 'next/navigation';
@@ -9,7 +7,12 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import React from 'react';
 import { IoIosClose } from 'react-icons/io';
 
-const MobileNav = ({ handleOpen }: any) => {
+interface MobileNavProps {
+  handleOpen: () => void;
+  isOpen: boolean; // Add isOpen prop to control animation
+}
+
+const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
   const path = usePathname();
   const router = useRouter();
 
@@ -19,7 +22,12 @@ const MobileNav = ({ handleOpen }: any) => {
   };
 
   return (
-    <div className="bg-white lg:hidden shadow-md text-black h-full fixed inset-0 z-[99] py-5 px-4 md:px-[3rem] overflow-y-auto">
+    <div
+      className={`bg-white lg:hidden shadow-md text-black h-full fixed inset-0 z-[99] py-5 px-4 md:px-[3rem] overflow-y-auto transform transition-transform duration-300 ease-in-out ${
+        isOpen ? 'translate-x-0' : 'translate-x-full'
+      }`}
+    >
+      {/* Close Button and Logo */}
       <div className="flex justify-between mb-[2rem]">
         <Link href="/">
           <div className="">
@@ -27,8 +35,7 @@ const MobileNav = ({ handleOpen }: any) => {
               src="https://ik.imagekit.io/h6pmd5ivo/century%201/CENTURY1LOGO.svg?updatedAt=1742072488748"
               width={110}
               height={110}
-              // className="w-20 h-20"
-              alt=""
+              alt="Century1 Logo"
             />
           </div>
         </Link>
@@ -37,7 +44,8 @@ const MobileNav = ({ handleOpen }: any) => {
         </button>
       </div>
 
-      <div className=" mb-10 text-[14px] font-light cursor-pointer">
+      {/* Navigation Links */}
+      <div className="mb-10 text-[14px] font-light cursor-pointer">
         <a
           onClick={() => navigate('/')}
           className={`${path === '/' ? 'text-[#EC6B00]' : ''}`}
@@ -62,7 +70,7 @@ const MobileNav = ({ handleOpen }: any) => {
         </a>
         <br />
         <br />
-        <Menu as="div" className="relative inline-block text-left ">
+        <Menu as="div" className="relative inline-block text-left">
           <div>
             <MenuButton className="inline-flex w-full justify-center items-center text-lg text-black">
               <p
@@ -76,7 +84,6 @@ const MobileNav = ({ handleOpen }: any) => {
               >
                 Services
               </p>
-
               <ChevronDownIcon
                 aria-hidden="true"
                 className="-mr-1 h-5 w-5 text-gray-400"
@@ -85,7 +92,7 @@ const MobileNav = ({ handleOpen }: any) => {
           </div>
           <MenuItems
             transition
-            className="absolute  z-10 mt-2 w-52 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+            className="absolute z-10 mt-2 w-52 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
           >
             <div className="py-1">
               <MenuItem>
@@ -93,7 +100,7 @@ const MobileNav = ({ handleOpen }: any) => {
                   className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                   onClick={() => navigate('/infants')}
                 >
-                  <p> Cng solutions</p>
+                  <p>CNG solutions</p>
                 </a>
               </MenuItem>
               <MenuItem>
@@ -101,7 +108,7 @@ const MobileNav = ({ handleOpen }: any) => {
                   className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                   onClick={() => navigate('/Toddlers')}
                 >
-                  <p>pipeline</p>
+                  <p>Pipeline</p>
                 </a>
               </MenuItem>
               <MenuItem>
@@ -109,7 +116,7 @@ const MobileNav = ({ handleOpen }: any) => {
                   className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                   onClick={() => navigate('/preschool')}
                 >
-                  <p> oil and gas</p>
+                  <p>Oil and gas</p>
                 </a>
               </MenuItem>
             </div>
@@ -125,8 +132,10 @@ const MobileNav = ({ handleOpen }: any) => {
           <p>Contact Us</p>
         </a>
       </div>
+
+      {/* Stay in Touch Button */}
       <Link href="/contact">
-        <button className="bg-[#E62074] text-white text-[14px]  py-[8px] px-[20px] rounded-lg ">
+        <button className="bg-[#E62074] text-white text-[14px] py-[8px] px-[20px] rounded-lg">
           Stay in Touch
         </button>
       </Link>

@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
@@ -20,30 +20,26 @@ export const Nav = () => {
   const handleOpen = () => {
     setOpen(!open);
   };
+
+  // Prevent scrolling when mobile nav is open
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cleanup function to reset overflow when component unmounts
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [open]);
+
   return (
     <>
-      {/* <div className="max-w-7xl m-auto flex justify-between items-center px-4 md:px-7 xl:px-2">
-        <div className="flex gap-4">
-          <div>
-            <p>
-              contact us: <a href="#">08038080480490</a>
-            </p>
-          </div>
-          <div>
-            <p>
-              email us: <a href="#">johndoe@gmail.com</a>
-            </p>
-          </div>
-        </div>
-
-        <div>
-
-        </div>
-      </div> */}
-
-      <div className="font-main shadow-sm bg-white lg:bg-white/10 lg:backdrop-blur-lg border-b border-white/20 sticky top-0 z-50 py-1 md:py-2 lg:py-4 overflow-scroll-hidden">
+      <div className="font-main shadow-sm bg-white lg:bg-white/10 lg:backdrop-blur-lg border-b border-white/20 sticky top-0 z-50 py-1 md:py-2 lg:py-4">
         {open && <MobileNav handleOpen={handleOpen} />}
-        <div className="px-4  max-w-7xl m-auto md:px-7  xl:px-5 ">
+        <div className="px-4 max-w-7xl m-auto md:px-7 xl:px-5">
           <div className="py-2 flex items-center justify-between">
             <Link href="/">
               <div className="prevent-select">
@@ -51,12 +47,11 @@ export const Nav = () => {
                   src="https://ik.imagekit.io/h6pmd5ivo/century%201/CENTURY1LOGO.svg?updatedAt=1742072488748"
                   width={110}
                   height={110}
-                  // className="w-20 h-20"
-                  alt=""
+                  alt="Century1 Logo"
                 />
               </div>
             </Link>
-            <nav className="hidden lg:flex items-center gap-6 ">
+            <nav className="hidden lg:flex items-center gap-6">
               <Link
                 href="/"
                 className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all"
@@ -66,7 +61,7 @@ export const Nav = () => {
                 />
                 <p
                   className={`${
-                    path === '/' ? '  text-[#d23e3e]' : ''
+                    path === '/' ? 'text-[#d23e3e]' : ''
                   } bg-no-repeat bg-bottom`}
                 >
                   Home
@@ -82,7 +77,7 @@ export const Nav = () => {
                 />
                 <p
                   className={`${
-                    path === '/location' ? '  text-[#d23e3e]' : ''
+                    path === '/location' ? 'text-[#d23e3e]' : ''
                   } bg-no-repeat bg-bottom`}
                 >
                   Location
@@ -93,18 +88,18 @@ export const Nav = () => {
                 className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all"
               >
                 <MdGroups2
-                  className={` text-lg ${path === '/about' ? 'text-[#d23e3e]' : ''} `}
+                  className={`text-lg ${path === '/about' ? 'text-[#d23e3e]' : ''}`}
                 />
                 <p
                   className={`${
-                    path === '/about' ? '  text-[#d23e3e]' : ''
+                    path === '/about' ? 'text-[#d23e3e]' : ''
                   } bg-no-repeat bg-bottom`}
                 >
                   About Us
                 </p>
               </Link>
 
-              <Menu as="div" className="relative inline-block text-left ">
+              <Menu as="div" className="relative inline-block text-left">
                 <div>
                   <MenuButton className="inline-flex w-full justify-center items-center text-sm text-black hover:text-[#d23e3e] transition-all">
                     <FaCog
@@ -123,22 +118,19 @@ export const Nav = () => {
                     </p>
                     <ChevronDownIcon
                       aria-hidden="true"
-                      className=" h-5 w-5 text-black hover:text-[#d23e3e] transition-all"
+                      className="h-5 w-5 text-black hover:text-[#d23e3e] transition-all"
                     />
                   </MenuButton>
                 </div>
                 <MenuItems
                   transition
-                  className="absolute right-0 top-[2rem] z-10 mt-2 w-[60rem] origin-center rounded-md bg-white 
-                  shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none \
-                  data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 
-                  data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in "
+                  className="absolute right-0 top-[2rem] z-10 mt-2 w-[60rem] origin-center rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
                 >
                   <div className="py-1 flex justify-between">
                     <div>
                       <MenuItem>
                         <h2 className="block px-4 py-2 text-md text-gray-700">
-                          <span className="">CNG services</span>
+                          <span>CNG services</span>
                         </h2>
                       </MenuItem>
                       <MenuItem>
@@ -233,24 +225,16 @@ export const Nav = () => {
                 />
                 <p
                   className={`${
-                    path === '/contact' ? '  text-[#d23e3e]' : ''
+                    path === '/contact' ? 'text-[#d23e3e]' : ''
                   } bg-no-repeat bg-bottom`}
                 >
                   Contact Us
                 </p>
               </Link>
             </nav>
-            {/* <Link href="/contact">
-              <button className="bg-[#E62074] text-white hidden lg:block py-[16px] px-[24px] rounded-lg ">
-                Stay in Touch
-              </button>
-            </Link> */}
-            {/* <button className="lg:hidden border border-gray-800 rounded-full p-3">
-            <RxHamburgerMenu />
-          </button> */}
 
-            {/* mobile nav */}
-            <div className=" lg:hidden cursor-pointer" onClick={handleOpen}>
+            {/* Mobile Nav Toggle Button */}
+            <div className="lg:hidden cursor-pointer" onClick={handleOpen}>
               {open ? (
                 <IoIosClose className="hidden" />
               ) : (

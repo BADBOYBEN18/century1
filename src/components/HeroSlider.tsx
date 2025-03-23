@@ -34,7 +34,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative h-screen">
+    <section className="relative h-[85vh] max-h-[90vh]">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}

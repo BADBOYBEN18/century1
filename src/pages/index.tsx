@@ -201,7 +201,7 @@ export default function Home() {
               buttonText="LEARN MORE"
             />
             <ServiceCard
-              imageUrl="https://ik.imagekit.io/h6pmd5ivo/century%201/chris-leboutillier-TUJud0AWAPI-unsplash-min.jpg?updatedAt=1742515937562"
+              imageUrl=""
               title="CENTURY1 POWER SERVICES"
               description="PCL Power is dedicated to delivering renewable energy solutions for industrial, commercial, and residential applications. PCL Power is committed to driving sustainable energy adoption and reducing carbon footprints."
               buttonText="LEARN MORE"

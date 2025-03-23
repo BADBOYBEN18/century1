@@ -14,6 +14,7 @@ import { MdOutlineChangeCircle } from 'react-icons/md';
 import { GiWorld } from 'react-icons/gi';
 import { FaHandshake } from 'react-icons/fa';
 import { BriefcaseIcon } from '@heroicons/react/20/solid';
+import HeroSection from '@/components/HeroSlider';
 
 const currentYear = new Date().getFullYear();
 
@@ -32,36 +33,8 @@ export default function Home() {
       <Nav />
 
       {/* Hero Section */}
-      <section className="pb-5 md:pb-9 lg:pb-16 xl:max-w-7xl mx-auto">
-        <div className="relative h-screen flex items-center justify-center">
-          {/* Background Image */}
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: `url('https://ik.imagekit.io/h6pmd5ivo/century%201/india-to-double-down-on-oil-gas-exploration-hardeep-singh-puri.webp?updatedAt=1742682197100')`,
-            }}
-          >
-            {/* Overlay for better text visibility */}
-            <div className="absolute inset-0 bg-black/60"></div>
-          </div>
-          {/* Centered Content */}
-          <div className="relative z-10 text-center text-white px-4 space-y-7 lg:space-y-8">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Welcome to{' '}
-              <span className="text-[#4dbf88]">
-                Century<span className="text-[#e53344]">1</span>
-              </span>{' '}
-              Limited
-            </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-              Your trusted partner in innovative and sustainable energy
-              solutions.
-            </p>
-            <button className="bg-[#4dbf88] text-white px-8 py-3 rounded-md font-medium hover:bg-[#3aa371] lg:hover:-translate-y-3 transition-all duration-300">
-              Learn More
-            </button>
-          </div>
-        </div>
+      <section className="pb-5 md:pb-9 lg:pb-16 ">
+        <HeroSection />
       </section>
 
       {/* About Section */}

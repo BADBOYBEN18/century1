@@ -56,7 +56,7 @@ export const Nav = () => {
               {/* Desktop Navigation Links */}
               <Link
                 href="/"
-                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all"
+                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all duration-200"
               >
                 <IoIosHome
                   className={`text-md ${path === '/' ? 'text-[#d23e3e]' : ''}`}
@@ -72,7 +72,7 @@ export const Nav = () => {
 
               <Link
                 href="/location"
-                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all"
+                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all duration-200"
               >
                 <FaLocationDot
                   className={`${path === '/location' ? 'text-[#d23e3e]' : ''}`}
@@ -119,10 +119,7 @@ export const Nav = () => {
                     >
                       Services
                     </p>
-                    <ChevronDownIcon
-                      aria-hidden="true"
-                      className="h-5 w-5 text-black hover:text-[#d23e3e] transition-all"
-                    />
+                    <ChevronDownIcon aria-hidden="true" className="h-5 w-5" />
                   </MenuButton>
                 </div>
                 <MenuItems

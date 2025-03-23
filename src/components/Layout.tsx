@@ -7,7 +7,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <div>
       <Nav />
       {children}
-      <Footer />
+      <Footer year={0} />
     </div>
   );
 };

@@ -3,11 +3,7 @@ import Link from 'next/link';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md';
 
-interface FooterProps {
-  year: number;
-}
-
-export const Footer = ({ year }: FooterProps) => {
+export const Footer = ({ year }: { year: number }) => {
   return (
     <div className="bg-[#172026]/95 text-white">
       <footer className="max-w-7xl mx-auto px-4 py-12 lg:py-16 lg:px-8">

@@ -27,25 +27,26 @@ body {
 .footer-p p {
   font-size: 14px;
 }
+
 @media (min-width: 1024px) {
   .animation {
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
   }
-}
 
-.animation4 {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-}
+  .animation2 {
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    will-change: opacity, transform;
+  }
 
-.animation2 {
-  animation: appear2 linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-  will-change: opacity, transform;
+  .animation4 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
 }
 
 @keyframes appear {

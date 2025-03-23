@@ -33,11 +33,34 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="pb-5 md:pb-9 lg:pb-16 xl:max-w-7xl mx-auto">
-        <div className="px-2 md:px-4 mt-3 lg:mt-0">
-          {/* Video placeholder (commented out for now) */}
-          {/* <video autoPlay loop muted controls className="w-screen h-auto rounded-lg shadow-lg object-cover object-center">
-            <source src="https://ik.imagekit.io/h6pmd5ivo/century%201/century1webformat.webm/ik-video.mp4?updatedAt=1742392286395" type="video/webm" />
-          </video> */}
+        <div className="relative h-screen flex items-center justify-center">
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: `url('https://ik.imagekit.io/h6pmd5ivo/century%201/india-to-double-down-on-oil-gas-exploration-hardeep-singh-puri.webp?updatedAt=1742682197100')`,
+            }}
+          >
+            {/* Overlay for better text visibility */}
+            <div className="absolute inset-0 bg-black/60"></div>
+          </div>
+          {/* Centered Content */}
+          <div className="relative z-10 text-center text-white px-4 space-y-7 lg:space-y-8">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              Welcome to{' '}
+              <span className="text-[#4dbf88]">
+                Century<span className="text-[#e53344]">1</span>
+              </span>{' '}
+              Limited
+            </h1>
+            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+              Your trusted partner in innovative and sustainable energy
+              solutions.
+            </p>
+            <button className="bg-[#4dbf88] text-white px-8 py-3 rounded-md font-medium hover:bg-[#3aa371] lg:hover:-translate-y-3 transition-all duration-300">
+              Learn More
+            </button>
+          </div>
         </div>
       </section>
 
@@ -194,7 +217,7 @@ export default function Home() {
       </section>
 
       {/* Logo Ticker Section */}
-      <section className="pb-14 lg:pb-[160px]">
+      <section className="pb-20 lg:pb-[160px]">
         <LogoTicker />
       </section>
 

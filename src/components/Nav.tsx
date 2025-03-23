@@ -41,7 +41,7 @@ export const Nav = () => {
         </div>
       </div> */}
 
-      <div className="font-main shadow-sm bg-white lg:bg-white/10 lg:backdrop-blur-lg border-b border-white/20 sticky top-0 z-50 py-1 md:py-2 lg:py-4">
+      <div className="font-main shadow-sm bg-white lg:bg-white/10 lg:backdrop-blur-lg border-b border-white/20 sticky top-0 z-50 py-1 md:py-2 lg:py-4 overflow-scroll-hidden">
         {open && <MobileNav handleOpen={handleOpen} />}
         <div className="px-4  max-w-7xl m-auto md:px-7  xl:px-5 ">
           <div className="py-2 flex items-center justify-between">

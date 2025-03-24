@@ -204,6 +204,29 @@ export default function Home() {
         <LogoTicker />
       </section>
 
+      <section className="pb-20 lg:pb-[160px]">
+        <div className="max-w-[30rem] md:max-w-4xl lg:max-w-7xl m-auto px-4 text-center space-y-4">
+          <h1 className="text-[20px] md:text-[25px] lg:text-[40px] text-[#2E8B57] font-bold">
+            Energy Solutions,{' '}
+            <span className="text-[#006400]">Built to Last</span>
+          </h1>
+          <p className="text-gray-700 text-[12px] md:text-[14px] lg:text-[16px] pb-5 leading-relaxed">
+            Here at century1 limited we strive to provide sustainable energy
+            solutions and deliver reliable oil and gas solutions
+            <br className="hidden lg:block" />
+            while prioritizing environmental stewardship. Explore our{' '}
+            <span className="text-[#2E8B57] font-medium">
+              innovative operations
+            </span>{' '}
+            and learn how we&apos;re
+            <br className="hidden lg:block" />
+            powering communities while reducing our environmental footprint.
+          </p>
+          <button className="bg-[#2E8B57] hover:bg-[#006400] text-white text-[12px] md:text-[14px] lg:text-[18px] py-[10px] md:py-[14px] px-[28px] lg:px-[36px] rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
+            Contact Our Team
+          </button>
+        </div>
+      </section>
       {/* Footer Section */}
       <Footer year={currentYear} />
     </div>

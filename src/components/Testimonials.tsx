@@ -92,44 +92,37 @@ const TestimonialsSection = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-
-        {/* Custom CSS */}
-        <style jsx global>{`
-          /* Remove navigation arrows */
-          .testimonial-swiper .swiper-button-next,
-          .testimonial-swiper .swiper-button-prev {
-            display: none !important;
-          }
-
-          /* Style pagination bullets */
-          .swiper-pagination-bullet {
-            background: #d1d5db;
-            opacity: 1;
-            width: 10px;
-            height: 10px;
-            top: 20rem;
-          }
-
-          .swiper-pagination {
-            position: relative;
-            margin-top: 2.5rem;
-          }
-
-          .swiper-pagination-bullet-active {
-            background: #4dbf88;
-            width: 24px;
-            border-radius: 6px;
-          }
-
-          /* Equal height cards */
-          .testimonial-swiper .swiper-slide {
-            height: auto;
-          }
-          .testimonial-swiper .swiper-slide > div {
-            height: 100%;
-          }
-        `}</style>
       </div>
+      <style jsx global>{`
+        /* The 'global' keyword is crucial here for Swiper classes */
+        .testimonial-swiper .swiper-pagination {
+          position: relative !important;
+          margin-top: 2.5rem !important;
+        }
+
+        .testimonial-swiper .swiper-pagination-bullet {
+          background: #d1d5db !important;
+          opacity: 1 !important;
+          width: 10px !important;
+          height: 10px !important;
+        }
+
+        .testimonial-swiper .swiper-pagination-bullet-active {
+          background: #4dbf88 !important;
+          width: 24px !important;
+          border-radius: 6px !important;
+        }
+
+        /* Equal height slides */
+        .testimonial-swiper .swiper-slide {
+          height: auto !important;
+          display: flex !important;
+        }
+
+        .testimonial-swiper .swiper-slide > div {
+          height: 100% !important;
+        }
+      `}</style>
     </section>
   );
 };

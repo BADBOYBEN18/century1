@@ -31,16 +31,25 @@ const StatsSection = () => {
   ];
 
   return (
-    <section className="relative py-12 sm:py-16 lg:py-20 bg-[url('https://ik.imagekit.io/h6pmd5ivo/century%201/adigun-ampa-9U0vAXekzgU-unsplash.jpg?updatedAt=1742757586627')] bg-cover bg-center bg-no-repeat">
+    <section
+      className="relative py-12 sm:py-16 lg:py-20 "
+      style={{
+        backgroundImage:
+          'url("https://ik.imagekit.io/h6pmd5ivo/century%201/martin-adams-a_PDPUPuNZ8-unsplash.jpg?updatedAt=1742845627632")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       {/* Overlay for better readability */}
-      {/* <div className="absolute inset-0 bg-black/30"></div> */}
+      <div className="absolute inset-0 bg-black/30"></div>
 
       <div className="max-w-7xl mx-auto px-4 lg:py-10 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-white/90 p-6 rounded-lg shadow-sm text-center transition-all hover:shadow-md flex flex-col items-center cursor-pointer backdrop-blur-sm hover:backdrop-blur-none"
+              className="bg-white/90 p-6 rounded-lg  shadow-sm text-center hover:shadow-md flex flex-col items-center cursor-pointer hover:scale-95 transition-all"
             >
               <div className="bg-[#4dbf88] text-white p-3 rounded-full mb-4">
                 {stat.icon}

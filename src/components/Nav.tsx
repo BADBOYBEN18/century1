@@ -135,7 +135,7 @@ export const Nav = () => {
                       </MenuItem>
                       <MenuItem>
                         <Link
-                          href="/infants"
+                          href="/"
                           className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                         >
                           Power-Generation
@@ -143,18 +143,154 @@ export const Nav = () => {
                       </MenuItem>
                       <MenuItem>
                         <Link
-                          href="/Toddlers"
+                          href="/"
                           className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                         >
-                          Power-Generation
+                          Power Generator Procurement
                         </Link>
                       </MenuItem>
                       <MenuItem>
                         <Link
-                          href="/preschool"
+                          href="/"
                           className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                         >
-                          Pre-School & Kindergarten
+                          Solar Power Solution
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Gas Plant Construction
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Gas Station Solution
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Mobile Gas Station
+                        </Link>
+                      </MenuItem>
+                    </div>
+
+                    <div>
+                      <MenuItem>
+                        <h2 className="block px-4 py-2 text-md text-gray-700">
+                          <span>Paradigm Creations Services</span>
+                        </h2>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Pipeline Construction & Maintenance
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Marine Support Services
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Drilling Support Services
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Asset Health and Condition Monitoring
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Subsea Services
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Quality Assurance & Quality Control
+                        </Link>
+                      </MenuItem>
+                    </div>
+
+                    <div>
+                      <MenuItem>
+                        <h2 className="block px-4 py-2 text-md text-gray-700">
+                          <span>PCL-Gas-Services</span>
+                        </h2>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Gas Reticulation
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Manufacturing of Gas Skid
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Tanks and Cylinders
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          PRMS
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Gas Call Service
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          href="/"
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                          Energy Blog
                         </Link>
                       </MenuItem>
                     </div>

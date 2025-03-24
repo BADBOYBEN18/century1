@@ -31,18 +31,9 @@ const StatsSection = () => {
   ];
 
   return (
-    <section
-      className="relative py-12 sm:py-16 lg:py-20"
-      style={{
-        backgroundImage:
-          'url("https://ik.imagekit.io/h6pmd5ivo/century%201/martin-adams-a_PDPUPuNZ8-unsplash.jpg?updatedAt=1742845627632")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
-    >
+    <section className="relative py-12 sm:py-16 lg:py-20 bg-[url('https://ik.imagekit.io/h6pmd5ivo/century%201/adigun-ampa-9U0vAXekzgU-unsplash.jpg?updatedAt=1742757586627')] bg-cover bg-center bg-no-repeat">
       {/* Overlay for better readability */}
-      <div className="absolute inset-0 bg-black/30"></div>
+      {/* <div className="absolute inset-0 bg-black/30"></div> */}
 
       <div className="max-w-7xl mx-auto px-4 lg:py-10 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8">

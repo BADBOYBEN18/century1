@@ -15,12 +15,14 @@ import { GiWorld } from 'react-icons/gi';
 import { FaHandshake } from 'react-icons/fa';
 import { BriefcaseIcon } from '@heroicons/react/20/solid';
 import HeroSection from '@/components/HeroSlider';
+import StatsSection from '@/components/StatsSection';
+import TestimonialsSection from '@/components/Testimonials';
 
 const currentYear = new Date().getFullYear();
 
 export default function Home() {
   return (
-    <div className="font-main overflow-clip">
+    <div className="font-main">
       <Head>
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -187,6 +189,14 @@ export default function Home() {
             />
           </div>
         </div>
+      </section>
+
+      <section className="pb-20 lg:pb-[160px]">
+        <TestimonialsSection />
+      </section>
+
+      <section className="pb-20 lg:pb-[160px]">
+        <StatsSection />
       </section>
 
       {/* Logo Ticker Section */}

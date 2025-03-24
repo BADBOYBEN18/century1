@@ -56,7 +56,7 @@ export const Nav = () => {
               {/* Desktop Navigation Links */}
               <Link
                 href="/"
-                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all duration-200"
+                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all  duration-200"
               >
                 <IoIosHome
                   className={`text-md ${path === '/' ? 'text-[#d23e3e]' : ''}`}
@@ -88,7 +88,7 @@ export const Nav = () => {
 
               <Link
                 href="/about"
-                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all"
+                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all duration-200"
               >
                 <MdGroups2
                   className={`text-lg ${path === '/about' ? 'text-[#d23e3e]' : ''}`}
@@ -104,7 +104,7 @@ export const Nav = () => {
 
               <Menu as="div" className="relative inline-block text-left">
                 <div>
-                  <MenuButton className="inline-flex w-full justify-center items-center text-sm text-black hover:text-[#d23e3e] transition-all">
+                  <MenuButton className="inline-flex w-full justify-center items-center text-sm text-black hover:text-[#d23e3e] transition-all duration-200">
                     <FaCog
                       className={`${path === '' ? 'text-[#d23e3e]' : ''} text-md`}
                     />
@@ -124,13 +124,13 @@ export const Nav = () => {
                 </div>
                 <MenuItems
                   transition
-                  className="absolute right-0 top-[2rem] z-10 mt-2 w-[60rem] origin-center rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+                  className="absolute right-0 top-[2rem] z-10 mt-2 w-[50rem] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
                 >
                   <div className="py-1 flex justify-between">
                     <div>
                       <MenuItem>
                         <h2 className="block px-4 py-2 text-md text-gray-700">
-                          <span>CNG services</span>
+                          <span>PCL Power-Services</span>
                         </h2>
                       </MenuItem>
                       <MenuItem>
@@ -138,7 +138,7 @@ export const Nav = () => {
                           href="/infants"
                           className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                         >
-                          Infants
+                          Power-Generation
                         </Link>
                       </MenuItem>
                       <MenuItem>
@@ -146,61 +146,7 @@ export const Nav = () => {
                           href="/Toddlers"
                           className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                         >
-                          Toddlers
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/preschool"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Pre-School & Kindergarten
-                        </Link>
-                      </MenuItem>
-                    </div>
-
-                    <div>
-                      <MenuItem>
-                        <Link
-                          href="/infants"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Infants
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/Toddlers"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Toddlers
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/preschool"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Pre-School & Kindergarten
-                        </Link>
-                      </MenuItem>
-                    </div>
-
-                    <div>
-                      <MenuItem>
-                        <Link
-                          href="/infants"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Infants
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/Toddlers"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Toddlers
+                          Power-Generation
                         </Link>
                       </MenuItem>
                       <MenuItem>
@@ -218,7 +164,7 @@ export const Nav = () => {
 
               <Link
                 href="/contact"
-                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all"
+                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all duration-200"
               >
                 <IoIosMail
                   className={`text-lg ${path === '/contact' ? 'text-[#d23e3e]' : ''}`}

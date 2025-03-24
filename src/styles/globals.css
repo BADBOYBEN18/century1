@@ -5,6 +5,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Prevent scrolling when dropdown is open */
+.headlessui-popover-open {
+  touch-action: none;
+  overscroll-behavior: contain;
+}
+
+/* Visual cue that content is not scrollable */
+.headlessui-popover-open::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.01);
+  z-index: 40;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -33,6 +51,11 @@ body {
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+  }
+
+  body {
+    overflow: visible !important;
+    padding-right: 0 !important;
   }
 
   .animation2 {

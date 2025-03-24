@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import Layout from '@/components/Layout';
-import Link from 'next/link';
-import Head from 'next/head';
+// import Layout from '@/components/Layout';
+// import Link from 'next/link';
+// import Head from 'next/head';
 
 const about = () => {
   return (

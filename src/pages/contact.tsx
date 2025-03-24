@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import { Nav } from '@/components/Nav';
-import Head from 'next/head';
+// import { Nav } from '@/components/Nav';
+// import Head from 'next/head';
 import React from 'react';
 
 const contact = () => {

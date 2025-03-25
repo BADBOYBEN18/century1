@@ -71,22 +71,6 @@ export const Nav = () => {
               </Link>
 
               <Link
-                href="/location"
-                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all duration-200"
-              >
-                <FaLocationDot
-                  className={`${path === '/location' ? 'text-[#d23e3e]' : ''}`}
-                />
-                <p
-                  className={`${
-                    path === '/location' ? 'text-[#d23e3e]' : ''
-                  } bg-no-repeat bg-bottom`}
-                >
-                  Location
-                </p>
-              </Link>
-
-              <Link
                 href="/about"
                 className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all duration-200"
               >
@@ -99,6 +83,22 @@ export const Nav = () => {
                   } bg-no-repeat bg-bottom`}
                 >
                   About Us
+                </p>
+              </Link>
+
+              <Link
+                href="/location"
+                className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all duration-200"
+              >
+                <FaLocationDot
+                  className={`${path === '/location' ? 'text-[#d23e3e]' : ''}`}
+                />
+                <p
+                  className={`${
+                    path === '/location' ? 'text-[#d23e3e]' : ''
+                  } bg-no-repeat bg-bottom`}
+                >
+                  Location
                 </p>
               </Link>
 

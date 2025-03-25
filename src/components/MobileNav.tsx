@@ -48,25 +48,26 @@ const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
       <div className="mb-10 text-[14px] font-light cursor-pointer">
         <a
           onClick={() => navigate('/')}
-          className={`${path === '/' ? 'text-[#EC6B00]' : ''}`}
+          className={`${path === '/' ? 'text-[#35a76c]' : ''}`}
         >
           <p>Home</p>
         </a>
         <br />
         <br />
         <a
-          onClick={() => navigate('/location')}
-          className={`${path === '/location' ? 'text-[#E62074]' : ''}`}
+          onClick={() => navigate('/about')}
+          className={`${path === '/about' ? 'text-[#35a76c]' : ''}`}
         >
-          <p>Location</p>
+          <p>About us</p>
         </a>
         <br />
         <br />
+
         <a
-          onClick={() => navigate('/about')}
-          className={`${path === '/about' ? 'text-[#35A76C]' : ''}`}
+          onClick={() => navigate('/location')}
+          className={`${path === '/location' ? 'text-[#35a76c]' : ''}`}
         >
-          <p>About us</p>
+          <p>Location</p>
         </a>
         <br />
         <br />
@@ -78,7 +79,7 @@ const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
                   path === '/infants' ||
                   path === '/Toddlers' ||
                   path === '/preschool'
-                    ? 'text-[#FDE812]'
+                    ? 'text-[#35a76c]'
                     : ''
                 }`}
               >
@@ -98,7 +99,7 @@ const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
               <MenuItem>
                 <a
                   className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                  onClick={() => navigate('/infants')}
+                  onClick={() => navigate('/')}
                 >
                   <p>CNG solutions</p>
                 </a>
@@ -106,7 +107,7 @@ const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
               <MenuItem>
                 <a
                   className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                  onClick={() => navigate('/Toddlers')}
+                  onClick={() => navigate('/')}
                 >
                   <p>Pipeline</p>
                 </a>
@@ -114,7 +115,7 @@ const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
               <MenuItem>
                 <a
                   className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                  onClick={() => navigate('/preschool')}
+                  onClick={() => navigate('/')}
                 >
                   <p>Oil and gas</p>
                 </a>
@@ -127,7 +128,7 @@ const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
         <br />
         <a
           onClick={() => navigate('/contact')}
-          className={`${path === '/contact' ? 'text-[#d23e3e]' : ''}`}
+          className={`${path === '/contact' ? 'text-[#35a76c]' : ''}`}
         >
           <p>Contact Us</p>
         </a>
@@ -135,7 +136,7 @@ const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
 
       {/* Stay in Touch Button */}
       <Link href="/contact">
-        <button className="bg-[#E62074] text-white text-[14px] py-[8px] px-[20px] rounded-lg">
+        <button className="bg-[#35a76c] text-white text-[14px] py-[8px] px-[20px] rounded-lg">
           Stay in Touch
         </button>
       </Link>

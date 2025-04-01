@@ -55,7 +55,7 @@ const MissionSection = () => {
               key={index}
               className="bg-white/90 p-6 rounded-lg  shadow-sm text-center hover:shadow-md flex flex-col items-center cursor-pointer hover:scale-95 transition-all"
             >
-              <div className="bg-[#4dbf88] h-14 w-14 lg:h-16 lg:w-16 flex items-center justify-center text-white p-3 rounded-full mb-4">
+              <div className="bg-[#4dbf88] h-14 w-14 lg:h-16 lg:w-16 flex items-center justify-center logo text-white p-3 rounded-full mb-4">
                 {stat.icon}
               </div>
               <p className="text-xl sm:text-2xl font-bold text-[#4dbf88] mb-2">

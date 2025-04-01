@@ -30,7 +30,7 @@ const About = () => {
             </div>
             {/* Centered Content */}
             <div className="relative z-10 text-center text-white px-4 space-y-7 lg:space-y-8">
-              <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-6">
+              <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-6">
                 About us
               </h1>
             </div>

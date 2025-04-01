@@ -1,5 +1,7 @@
 'use client';
 import { useState } from 'react';
+import { MdOutlineEmail } from 'react-icons/md';
+import { motion } from 'framer-motion';
 
 export default function ContactSection() {
   const [showEmail, setShowEmail] = useState(false);
@@ -8,32 +10,32 @@ export default function ContactSection() {
     company: '',
     email: '',
     phone: '',
-    inquiryType: 'general',
     message: '',
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    window.location.href = `mailto:century1ltd@gmail.com?subject=${encodeURIComponent(
-      `${formData.inquiryType} Inquiry from ${formData.name} (${formData.company})`
+    window.location.href = `mailto:century1ltd@gmail.com?
     )}&body=${encodeURIComponent(
       `Contact Details:\nName: ${formData.name}\nCompany: ${formData.company}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
     )}`;
   };
 
   return (
-    <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <section className=" py-8 lg:py-10 xl:py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 ">
         {/* Left Column - Contact Form */}
         <div className="flex flex-col">
-          <div className="bg-white shadow-xl rounded-lg p-8 mb-8 border-l-4 border-blue-600">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
-              Century 1 Energy Solutions
-            </h3>
-            <div className="space-y-4">
+          <div className="">
+            <h1 className="text-[2rem]  md:text-[3rem] font-bold text-gray-900 mb-4 md:mb-7">
+              <span className="text-[#4dbf88]">Century</span>
+              <span className="text-[#e53344]">1</span> Limited
+            </h1>
+            <div className="space-y-4 lg:space-y-6">
+              <p>Send us an Email, call or fill the form to reach out to us!</p>
               <div className="flex items-start">
                 <svg
-                  className="h-6 w-6 text-blue-600 mr-3 mt-1"
+                  className="h-6 w-6 text-[#4dbf88] mr-3 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -56,13 +58,21 @@ export default function ContactSection() {
                   <p className="text-gray-600">
                     123 Energy Plaza, Suite 500
                     <br />
-                    Houston, TX 77002
+                    Lagos, Nigeria.
                   </p>
+                </div>
+              </div>
+              <div className="flex items-start ">
+                <MdOutlineEmail className="mr-3 h-6 w-6 text-green-500" />
+
+                <div>
+                  <h4 className="font-medium text-gray-900">Our Email</h4>
+                  <p className="text-gray-600">century1ltd@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <svg
-                  className="h-6 w-6 text-blue-600 mr-3 mt-1"
+                  className="h-6 w-6 text-[#4dbf88] mr-3 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -75,13 +85,13 @@ export default function ContactSection() {
                   />
                 </svg>
                 <div>
-                  <h4 className="font-medium text-gray-900">24/7 Operations</h4>
-                  <p className="text-gray-600">+1 (800) 555-ENERGY</p>
+                  <h4 className="font-medium text-gray-900">Our phone line</h4>
+                  <p className="text-gray-600">+234 90 456 8908</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <svg
-                  className="h-6 w-6 text-blue-600 mr-3 mt-1"
+                  className="h-6 w-6 text-[#4dbf88] mr-3 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -96,21 +106,67 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-medium text-gray-900">Business Hours</h4>
                   <p className="text-gray-600">
-                    Monday - Friday: 8:00 AM - 6:00 PM CST
-                    <br />
-                    Emergency contacts available 24/7
+                    Monday - Friday: 8:00 AM - 6:00 PM WAT
                   </p>
                 </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row  justify-center  mt-7 md:mt-8 lg:mt-10 gap-5 lg:gap-2 ">
+              <div>
+                <h1
+                  className="
+                font-bold  mb-2"
+                >
+                  Customer support
+                </h1>
+                <p className="text-gray-600 font-light text-sm">
+                  our support team is available around the clock to address any
+                  issues you may have
+                </p>
+              </div>
+
+              <div>
+                <h1
+                  className="
+                font-bold  mb-2"
+                >
+                  Feedback and Suggestions
+                </h1>
+                <p className="text-gray-600 font-light text-sm">
+                  We value your feedback and are continuosly working to improve
+                  our services. Your input is crucial to shaping the future of
+                  our company
+                </p>
+              </div>
+
+              <div>
+                <h1
+                  className="
+                font-bold  mb-2"
+                >
+                  Fast Response Times
+                </h1>
+                <p className="text-gray-600 text-sm font-light">
+                  We guarantee responses to all inquiries within 2 hours during
+                  business hours, and 12 hours maximum on weekends.
+                </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="bg-white shadow-xl rounded-lg p-8 border-l-4 border-blue-600">
+        {/* Right Column - Info */}
+        <motion.div
+          initial={{ opacity: 0, translateY: 100, y: 20 }}
+          animate={{ opacity: 1, translateY: 0, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="bg-white shadow-xl rounded-lg p-8 border-l-4 border-[#4dbf88]"
+        >
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
             Contact Our Energy Experts
           </h2>
-          <p className="text-blue-800 mb-6">
+          <p className=" mb-6">
             Complete this form and our team will respond within 24 business
             hours.
           </p>
@@ -123,7 +179,7 @@ export default function ContactSection() {
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md "
                   required
                   value={formData.name}
                   onChange={(e) =>
@@ -137,7 +193,7 @@ export default function ContactSection() {
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md "
                   required
                   value={formData.company}
                   onChange={(e) =>
@@ -154,7 +210,7 @@ export default function ContactSection() {
                 </label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md "
                   required
                   value={formData.email}
                   onChange={(e) =>
@@ -168,7 +224,7 @@ export default function ContactSection() {
                 </label>
                 <input
                   type="tel"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md "
                   value={formData.phone}
                   onChange={(e) =>
                     setFormData({ ...formData, phone: e.target.value })
@@ -179,30 +235,11 @@ export default function ContactSection() {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Inquiry Type *
-              </label>
-              <select
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                value={formData.inquiryType}
-                onChange={(e) =>
-                  setFormData({ ...formData, inquiryType: e.target.value })
-                }
-              >
-                <option value="general">General Inquiry</option>
-                <option value="technical">Technical Support</option>
-                <option value="sales">Sales & Partnerships</option>
-                <option value="careers">Career Opportunities</option>
-                <option value="media">Media Relations</option>
-              </select>
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
                 Message *
               </label>
               <textarea
                 rows={4}
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-4 py-3 border border-gray-300 rounded-md "
                 required
                 value={formData.message}
                 onChange={(e) =>
@@ -214,36 +251,32 @@ export default function ContactSection() {
             <div className="flex items-center">
               <button
                 type="submit"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-md transition duration-300"
+                className="bg-[#4dbf88] hover:bg-[#3aa371] text-white font-medium py-3 px-6 rounded-md transition duration-300"
               >
                 Submit Inquiry
               </button>
               <button
                 type="button"
                 onClick={() => setShowEmail(!showEmail)}
-                className="ml-4 text-blue-600 hover:text-blue-800 text-sm font-medium"
+                className="ml-4 text-[#4dbf88] hover:text-[#3aa371] text-sm font-medium "
               >
                 {showEmail ? 'Hide Direct Email' : 'Contact Directly'}
               </button>
             </div>
 
             {showEmail && (
-              <div className="bg-blue-50 p-4 rounded-md border border-blue-200">
-                <p className="text-sm text-blue-800 mb-2">
-                  Email our team directly at:
-                </p>
+              <div className="bg-[#f0f9f5] p-4 rounded-md border border-blue-200 ">
+                <p className="text-sm mb-2">Email our team directly at:</p>
                 <a
-                  href="mailto:contact@century1energy.com"
-                  className="text-blue-600 font-medium break-all hover:underline"
+                  href="mailto:century1@gmail.com"
+                  className="font-medium break-all hover:underline"
                 >
-                  contact@century1energy.com
+                  century1@gmail.com
                 </a>
               </div>
             )}
           </form>
-        </div>
-
-        {/* Right Column - Info */}
+        </motion.div>
       </div>
     </section>
   );

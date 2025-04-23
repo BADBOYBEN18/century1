@@ -6,6 +6,7 @@ import Head from 'next/head';
 // import { FaArrowRight } from 'react-icons/fa';
 import MissionSection from '@/components/MissionVission';
 import { LogoTicker } from '@/components/LogoTicker';
+import WhyChooseUs from '@/components/WhyChooseUs';
 
 const About = () => {
   return (
@@ -39,14 +40,14 @@ const About = () => {
 
         <section className="pb-14 md:pb-20 lg:pb-28">
           <div className=" px-7 max-w-7xl mx-auto">
-            <div className="flex flex-col gap-x-6 sm:flex-row-reverse lg:items-center">
+            <div className="flex flex-col gap-x-6 sm:flex-row-reverse lg:items-start">
               <img
                 src="https://ik.imagekit.io/h6pmd5ivo/century%201/another.webp?updatedAt=1741904541352"
                 alt="Century1 Limited"
                 className="hidden w-1/2 sm:block lg:h-[30rem]"
                 loading="lazy"
               />
-              <div className="sm:w-1/2 lg:py-[56px] lg:pr-[56px]">
+              <div className="sm:w-1/2 lg:py-[26px] lg:pr-[26px]">
                 <h1 className="pt-3 text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px]">
                   About{' '}
                   <span className="text-[#4dbf88]">
@@ -61,33 +62,34 @@ const About = () => {
                   loading="lazy"
                 />
 
-                <p className="py-[24px] text-[#36485C] text-[12px] lg:text-[16px] md:text-justify">
-                  Paradigm Creations Limited, established in 2012, is a
-                  pioneering energy solutions company dedicated to advancing the
-                  oil and gas industry. Initially focused on serving the
-                  upstream sector, we have since expanded our expertise to offer
-                  a wide range of energy solutions through our specialized
-                  subsidiaries: PCL Power and PCL Gas. Our success is driven by
-                  a skilled workforce and strategic international partnerships.
-                  Our team, located in China, Nigeria, and the UK, brings
-                  together a wealth of expertise and experience, ensuring
-                  excellence in every project. The China team focuses on
-                  precision manufacturing and quality control, leveraging
-                  advanced technologies to produce durable and reliable
-                  products. In Nigeria, our team addresses local market needs
-                  and maintains close relationships with clients, providing
-                  tailored solutions and exceptional customer service. Our UK
-                  team is dedicated to strategic planning, global business
-                  development, and maintaining our high standards of innovation
-                  and quality.
+                <p className="py-[24px] text-[#36485C] text-[14px] lg:text-[16px] md:text-justify">
+                  At Century1 Limited, we are committed to transforming the
+                  energy sector by offering top-quality CNG/LPG sales,
+                  distribution, equipment, and machinery—alongside cutting-edge
+                  technology solutions tailored for the gas industry. Our
+                  mission is to provide sustainable, efficient, and innovative
+                  energy solutions that power businesses and communities while
+                  ensuring safety, cost-effectiveness, and environmental
+                  responsibility. <br />
+                  <br />
+                  With a deep understanding of clean energy alternatives,
+                  Century1 Limited stands at the intersection of gas technology
+                  and innovation. We are not just a leading provider of CNG and
+                  LPG infrastructure—we also deliver advanced digital solutions,
+                  automation systems, and smart analytics to optimize the gas
+                  sector.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="pb-20 lg:pb-[160px]">
+        <section className="pb-20 lg:pb-24">
           <MissionSection />
+        </section>
+
+        <section className="pb-20 lg:pb-24">
+          <WhyChooseUs />
         </section>
 
         {/* Logo Ticker Section */}
@@ -95,23 +97,16 @@ const About = () => {
           <LogoTicker />
         </section>
 
-        <section className="pb-20 lg:pb-[160px]">
+        <section className="pb-20 lg:pb-[160px] container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-[30rem] md:max-w-4xl lg:max-w-7xl m-auto px-4 text-center space-y-4">
             <h1 className="text-[25px] md:text-[25px] lg:text-[40px] text-[#2E8B57] font-bold">
-              Energy Solutions,{' '}
-              <span className="text-[#006400]">Built to Last</span>
+              Leading Energy <span className="text-[#006400]">into a era</span>
             </h1>
-            <p className="text-gray-700 text-[12px] font-medium md:text-[14px] lg:text-[16px] pb-5 leading-relaxed">
-              Here at century1 limited we strive to provide sustainable energy
-              solutions and deliver reliable oil and gas solutions
-              <br className="hidden lg:block" />
-              while prioritizing environmental stewardship. Explore our{' '}
-              <span className="text-[#2E8B57] font-medium">
-                innovative operations
-              </span>{' '}
-              and learn how we&apos;re
-              <br className="hidden lg:block" />
-              powering communities while reducing our environmental footprint.
+            <p className="text-gray-700 text-[12px] font-medium md:text-[14px] lg:text-[16px] pb-5 leading-relaxed max-w-3xl mx-auto">
+              The energy landscape is evolving, and Century1 Limited is powering
+              the shift. As pioneers in gas innovation, digital transformation,
+              and clean fuel distribution, we equip industries with
+              high-performance technology and smart solutions.
             </p>
             <button className="bg-[#2E8B57] hover:bg-[#006400] text-white text-[14px] lg:text-[18px] py-[10px] md:py-[14px] px-[28px] lg:px-[36px] rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
               Get in touch

@@ -11,7 +11,8 @@ const MissionSection = () => {
     {
       title: 'OUR MISSION',
       label:
-        ' Our mission is to empower businesses and residences with durable, innovative energy infrastructure, driving the adoption of greener energy alternatives, and making advanced energy technologies accessible to all who need them',
+        ' Our goal is to redefine the future of energy through smart solutions, ensuring seamless integration between natural gas distribution and emerging technologies. We empower businesses to enhance efficiency, reduce operational costs, and maintain compliance with industry standards using data-driven insights and advanced tools',
+
       icon: <FaHandshake className="text-3xl" />,
     },
     {

@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Prevent scrolling when dropdown is open */
 .headlessui-popover-open {
   touch-action: none;

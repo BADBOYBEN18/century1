@@ -51,7 +51,7 @@ const Contact = () => {
                 <p className="text-white">Century1 headquaters</p>
               </div>
               <Link
-                href="https://maps.app.goo.gl/47yRAsXc82VS8yG89"
+                href="https://maps.app.goo.gl/bBM83Ju13tcG7Tq46"
                 target="_blank"
               >
                 <IoMdShare />
@@ -59,7 +59,7 @@ const Contact = () => {
             </div>
 
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2897.120382931518!2d-79.71754061552342!3d43.437201691906004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b5da159ddc11b%3A0x63dae6ca0ef8674a!2s1075%20North%20Service%20Rd%20W%20Suite%23100%2C%20Oakville%2C%20ON%20L6M%202G2%2C%20Canada!5e0!3m2!1sen!2sng!4v1725725101287!5m2!1sen!2sng"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6287538989127!2d3.4690947735036155!3d6.441695224111682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf44da46c81a9%3A0xf422e3e7cf79fa18!2s15A%20Olanrewaju%20Ninalowo%20Cres%2C%20Lekki%20Phase%201%2C%20Lagos%20100200%2C%20Lagos!5e0!3m2!1sen!2sng!4v1745438822237!5m2!1sen!2sng"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-[60vh] shadow-lg shadow-emerald-400/20"

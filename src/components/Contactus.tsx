@@ -56,7 +56,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-medium text-gray-900">Headquarters</h4>
                   <p className="text-gray-600">
-                    123 Energy Plaza, Suite 500
+                    15 Olanrewaju Ninolowo street lekki 1
                     <br />
                     Lagos, Nigeria.
                   </p>
@@ -67,7 +67,7 @@ export default function ContactSection() {
 
                 <div>
                   <h4 className="font-medium text-gray-900">Our Email</h4>
-                  <p className="text-gray-600">century1ltd@gmail.com</p>
+                  <p className="text-gray-600">info@century1.one</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -85,8 +85,10 @@ export default function ContactSection() {
                   />
                 </svg>
                 <div>
-                  <h4 className="font-medium text-gray-900">Our phone line</h4>
-                  <p className="text-gray-600">+234 90 456 8908</p>
+                  <h4 className="font-medium text-gray-900">Our phone lines</h4>
+                  <p className="text-gray-600">
+                    +2349124261004, +234 903 940 9537
+                  </p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -116,7 +118,8 @@ export default function ContactSection() {
               <div>
                 <h1
                   className="
-                font-bold  mb-2"
+                font-bold  mb-2 leading-5
+                "
                 >
                   Customer support
                 </h1>
@@ -268,10 +271,10 @@ export default function ContactSection() {
               <div className="bg-[#f0f9f5] p-4 rounded-md border border-blue-200 ">
                 <p className="text-sm mb-2">Email our team directly at:</p>
                 <a
-                  href="mailto:century1@gmail.com"
+                  href="mailto:info@century1.one"
                   className="font-medium break-all hover:underline"
                 >
-                  century1@gmail.com
+                  info@century1.one
                 </a>
               </div>
             )}

@@ -63,14 +63,14 @@ const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
         <br />
         <br />
 
-        <a
+        {/* <a
           onClick={() => navigate('/location')}
           className={`${path === '/location' ? 'text-[#35a76c]' : ''}`}
         >
           <p>Location</p>
         </a>
         <br />
-        <br />
+        <br /> */}
         <Menu as="div" className="relative inline-block text-left">
           <div>
             <MenuButton className="inline-flex w-full justify-center items-center text-lg text-black">

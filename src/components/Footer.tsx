@@ -42,17 +42,17 @@ export const Footer = ({ year }: { year: number }) => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-[#4dbf88]">Contact Us</h3>
             <ul className="space-y-2">
-              <li className="flex items-center gap-2">
-                <MdLocationOn className="text-[#4dbf88]" />
-                <span>123 Energy Street, Lagos, Nigeria</span>
+              <li className="flex md:items-center lg:items-start gap-2">
+                <MdLocationOn className="text-[#4dbf88]  lg:text-[1.5rem]" />
+                <span>15 Olanrewaju Ninolowo street lekki 1, Lagos.</span>
               </li>
-              <li className="flex items-center gap-2">
-                <MdPhone className="text-[#4dbf88]" />
-                <span>+234 123 456 7890</span>
+              <li className="flex md:items-center lg:items-start gap-2">
+                <MdPhone className="text-[#4dbf88] lg:text-[1.5rem]" />
+                <span>+234 903 940 9537 , +2349124261004</span>
               </li>
               <li className="flex items-center gap-2">
                 <MdEmail className="text-[#4dbf88]" />
-                <span>info@century1.com</span>
+                <span>info@century1.one</span>
               </li>
             </ul>
           </div>

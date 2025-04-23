@@ -7,7 +7,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { IoIosClose } from 'react-icons/io';
 import { IoIosHome } from 'react-icons/io';
-import { FaLocationDot } from 'react-icons/fa6';
+// import { FaLocationDot } from 'react-icons/fa6';
 import { IoIosMail } from 'react-icons/io';
 import { MdGroups2 } from 'react-icons/md';
 import { FaCog } from 'react-icons/fa';
@@ -86,7 +86,7 @@ export const Nav = () => {
                 </p>
               </Link>
 
-              <Link
+              {/* <Link
                 href="/location"
                 className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all duration-200"
               >
@@ -100,7 +100,7 @@ export const Nav = () => {
                 >
                   Location
                 </p>
-              </Link>
+              </Link> */}
 
               <Menu as="div" className="relative inline-block text-left">
                 <div>

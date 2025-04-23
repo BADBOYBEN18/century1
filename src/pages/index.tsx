@@ -156,35 +156,31 @@ export default function Home() {
             <h1 className="text-center border-2 max-w-[30rem] mx-auto border-black/90 p-3 shadow-md rounded-md uppercase sm:text-balance text-[24px] font-medium text-[#172026] lg:leading-[58px] mb-4">
               OUR COMPANY SERVICES
             </h1>
-            <p className="text-[12px] sm:text-sm lg:text-lg lg:text-justify">
-              Paradigm Creations Limited focuses on serving the upstream sector
-              of the oil and gas industry. Its specialized subsidiaries, PCL
-              Power and PCL Gas, expand its service offerings. PCL Power
-              delivers renewable energy solutions for industrial, commercial,
-              and residential applications, while PCL Gas manufactures and
-              supplies gas infrastructure, including CNG, LNG, LPG cylinders,
-              and tanks. These subsidiaries ensure Paradigm Creations provides
-              diverse, high-quality energy solutions across various sectors.
+            <p className="text-[12px] sm:text-sm lg:text-lg text-center">
+              Century1 Limited specializes in delivering comprehensive energy
+              solutions across the oil and gas value chain. Our dedicated
+              subsidiaries, Century1 Energy and Century1 GasTech, enhance our
+              service capabilities to meet diverse industry needs.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <ServiceCard
               imageUrl="https://ik.imagekit.io/h6pmd5ivo/century%201/rsz_bigstock-131155118.jpg?updatedAt=1741904280048"
-              title="CENTURY1 SERVICES"
-              description="CENTURY1 Limited focuses on serving the upstream sector of the oil and gas industry, providing expert solutions tailored to exploration and production needs."
+              title="Energy Consulting"
+              description="We consult on most matter of energy, from supply of Crude Oil, Natural Gas (CNG and LNG), Hydrogen, Geothermal, Solar, Wind, Bio-Gas and Nuclear, from Planning, development to commissioning."
               buttonText="LEARN MORE"
             />
             <ServiceCard
               imageUrl="https://ik.imagekit.io/h6pmd5ivo/century%201/adigun-ampa-9U0vAXekzgU-unsplash.jpg?updatedAt=1742757586627"
-              title="CENTURY1 POWER SERVICES"
-              description="PCL Power is dedicated to delivering renewable energy solutions for industrial, commercial, and residential applications. PCL Power is committed to driving sustainable energy adoption and reducing carbon footprints."
+              title="Energy Management"
+              description="We provide guaranteed and  regular  CNG supply to fixed facilities. CNG is discharged according to highest safety Standards and conditions set out under our Health and Safety Conditions. "
               buttonText="LEARN MORE"
             />
             <ServiceCard
               imageUrl="https://ik.imagekit.io/h6pmd5ivo/century%201/pcl%20gas.png?updatedAt=1742406564716"
-              title="CENTURY1-GAS SERVICES"
-              description="PCL Gas, on the other hand, specializes in the manufacturing and supply of gas infrastructure. This includes CNG, LNG, and LPG cylinders and tanks, as well as Pressure Regulating Metering Skids (PRMS)."
+              title="Energy Integrated Services"
+              description="We provide comprehensive solution to your energy cycle. Provide Training, Supply CNG/LPG/LNG, Manage Staff and Manage Health and Safety."
               buttonText="LEARN MORE"
             />
           </div>

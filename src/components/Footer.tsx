@@ -16,24 +16,36 @@ export const Footer = ({ year }: { year: number }) => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-[#4dbf88] transition-all">
+                <Link
+                  href="/about"
+                  className="hover:text-[#4dbf88] transition-all"
+                >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#4dbf88] transition-all">
+                <Link
+                  href="/services"
+                  className="hover:text-[#4dbf88] transition-all"
+                >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#4dbf88] transition-all">
+                <Link
+                  href="/location"
+                  className="hover:text-[#4dbf88] transition-all"
+                >
                   Location
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#4dbf88] transition-all">
+                <Link
+                  href="/contact"
+                  className="hover:text-[#4dbf88] transition-all"
+                >
                   Contact us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -61,30 +73,30 @@ export const Footer = ({ year }: { year: number }) => {
           <div className="space-y-4 lg:ml-[3rem]">
             <h3 className="text-lg font-semibold text-[#4dbf88]">Follow Us</h3>
             <div className="flex space-x-4">
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="text-white hover:text-[#4dbf88] transition-all"
               >
                 <FaFacebook className="w-6 h-6" />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/"
                 className="text-white hover:text-[#4dbf88] transition-all"
               >
                 <FaTwitter className="w-6 h-6" />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/"
                 className="text-white hover:text-[#4dbf88] transition-all"
               >
                 <FaInstagram className="w-6 h-6" />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/"
                 className="text-white hover:text-[#4dbf88] transition-all"
               >
                 <FaLinkedin className="w-6 h-6" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -105,7 +117,7 @@ export const Footer = ({ year }: { year: number }) => {
                 </div>
               </Link>
               <p className="text-sm font-medium">
-                Innovating Energy Solutions for a Sustainable Future.
+                Energy without limits powering today, tomorrow sustainably.
               </p>
             </div>
 
@@ -115,9 +127,11 @@ export const Footer = ({ year }: { year: number }) => {
               <br /> All Rights Reserved.
             </p>
 
-            <button className="bg-[#4dbf88] text-white text-sm md:text-base py-2 px-6 rounded-lg hover:bg-[#3aa371] transition-all duration-300">
-              Enquire Now
-            </button>
+            <Link href={'/contact'} className="block mt-4">
+              <button className="bg-[#4dbf88] text-white text-sm md:text-base py-2 px-6 rounded-lg hover:bg-[#3aa371] transition-all duration-300">
+                Enquire Now
+              </button>
+            </Link>
           </div>
         </div>
       </footer>

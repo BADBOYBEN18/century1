@@ -9,8 +9,8 @@ const images = [
     alt: 'chevron Logo',
   },
   {
-    src: 'https://ik.imagekit.io/h6pmd5ivo/century%201/Transcorp_Logo.svg_.png?updatedAt=1742601108097',
-    alt: 'transcorp Logo',
+    src: 'https://ik.imagekit.io/h6pmd5ivo/century%201/reanigeria_logo.jpeg?updatedAt=1746863517431',
+    alt: 'REAN Logo',
   },
   {
     src: 'https://ik.imagekit.io/h6pmd5ivo/century%201/Starsight.png?updatedAt=1742601108001',
@@ -29,12 +29,12 @@ const images = [
     alt: 'exxon Logo',
   },
   {
-    src: 'https://ik.imagekit.io/h6pmd5ivo/century%201/ewLWEAR.png?updatedAt=1742601107782',
-    alt: 'realwear Logo',
+    src: 'https://ik.imagekit.io/h6pmd5ivo/century%201/nga.webp?updatedAt=1746863517644',
+    alt: 'nga Logo',
   },
   {
-    src: 'https://ik.imagekit.io/h6pmd5ivo/century%201/Dangote-logo-1.png?updatedAt=1742601107687',
-    alt: 'dangote Logo',
+    src: 'https://ik.imagekit.io/h6pmd5ivo/century%201/aldg_logo_mid.png?updatedAt=1746863517573',
+    alt: 'aldg Logo',
   },
   {
     src: 'https://ik.imagekit.io/h6pmd5ivo/century%201/axxela.png?updatedAt=1742601107694',

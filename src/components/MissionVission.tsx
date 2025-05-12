@@ -11,14 +11,14 @@ const MissionSection = () => {
     {
       title: 'OUR MISSION',
       label:
-        ' Our goal is to redefine the future of energy through smart solutions, ensuring seamless integration between natural gas distribution and emerging technologies. We empower businesses to enhance efficiency, reduce operational costs, and maintain compliance with industry standards using data-driven insights and advanced tools',
+        ' At Century1 Limited, we are committed to revolutionizing the energy sector by delivering sustainable and innovative gas solutions. Through our expertise in CNG, LPG, and LNG trading, equipment supply, and renewable energy solutions, we aim to drive efficiency, safety, and environmental sustainability while providing unmatched value to our customers',
 
       icon: <FaHandshake className="text-3xl" />,
     },
     {
-      title: 'OUR VISSION',
+      title: 'OUR VISION',
       label:
-        'To be a frontrunner in Nigeria’s clean energy drive, revolutionizing access to sustainable and cost-efficient energy solutions for businesses and homes.',
+        'To be the leading provider of cutting-edge energy solutions in Nigeria and beyond, pioneering advancements in clean energy, gas-to-power technologies, and sustainable fuel alternatives that shape a greener, more efficient future for industries and communities worldwide',
       icon: <FaLightbulb className="text-3xl" />,
     },
     {

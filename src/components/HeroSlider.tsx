@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import Link from 'next/link';
 
 const HeroSection = () => {
   const slides = [
@@ -14,6 +15,7 @@ const HeroSection = () => {
       description:
         'Your trusted partner in innovative and sustainable energy solutions.',
       buttonText: 'Learn More',
+      href: '/about',
     },
     {
       backgroundImage:
@@ -22,6 +24,7 @@ const HeroSection = () => {
       description:
         'We specialize in renewable energy solutions and gas infrastructure.',
       buttonText: 'Explore Services',
+      href: '/services',
     },
     {
       backgroundImage:
@@ -30,6 +33,7 @@ const HeroSection = () => {
       description:
         'Our subsidiaries, PCL Power and PCL Gas, ensure comprehensive energy solutions.',
       buttonText: 'Contact Us',
+      href: '/contact',
     },
   ];
 
@@ -85,9 +89,11 @@ const HeroSection = () => {
                     </p>
                   </>
                 )}
-                <button className="bg-[#4dbf88] text-white px-8 py-3 rounded-md font-medium hover:bg-[#3aa371] lg:hover:-translate-y-3 transition-all duration-300">
-                  {slide.buttonText}
-                </button>
+                <Link href={slide.href}>
+                  <button className="bg-[#4dbf88] text-white px-8 py-3 rounded-md font-medium hover:bg-[#3aa371] lg:hover:-translate-y-3 transition-all duration-300">
+                    {slide.buttonText}
+                  </button>
+                </Link>
               </div>
             </div>
           </SwiperSlide>

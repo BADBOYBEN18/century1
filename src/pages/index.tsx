@@ -17,6 +17,8 @@ import { BriefcaseIcon } from '@heroicons/react/20/solid';
 import HeroSection from '@/components/HeroSlider';
 import StatsSection from '@/components/StatsSection';
 import TestimonialsSection from '@/components/Testimonials';
+import NotableProjects from '@/components/NotableProjects';
+import Link from 'next/link';
 
 const currentYear = new Date().getFullYear();
 
@@ -28,7 +30,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Homepage for Century1 Limited, a premier Oil and Energy service company."
+          content="Homepage for Century1 Limited, an  Oil, gas and Energy service company."
         />
       </Head>
 
@@ -65,25 +67,25 @@ export default function Home() {
               />
 
               <p className="py-[24px] text-[#36485C] text-[12px] lg:text-[18px] md:text-justify">
-                Century1 Limited (PCL) is a premier Oil and Energy service
-                company serving the Energy sector since 2011. We specialize in
-                Engineering, Procurement, and Construction (EPC) services and a
-                wide range of other essential services to support the energy
-                industry. Our highly skilled team operates globally, with
-                offices and manufacturing facilities in China and the UK. We
-                leverage international best practices and innovations, supported
-                by strategic partnerships with technical experts worldwide. Our
-                subsidiaries, PCL-Power and PCL-Gas, are dedicated to driving
-                the energy transition in Africa by providing innovative and
-                sustainable energy solutions.
+                Century1 Limited is a premier Oil and Energy service company
+                serving the Energy sector since 2019. At Century1 Limited, we
+                are committed to transforming the energy sector by offering
+                top-quality CNG/LPG sales, distribution, equipment, and
+                machinery—alongside cutting-edge technology solutions tailored
+                for the gas industry. Our mission is to provide sustainable,
+                efficient, and innovative energy solutions that power businesses
+                and communities while ensuring safety, cost-effectiveness, and
+                environmental responsibility.
               </p>
 
-              <button className="text-[#4dbf88] rounded-md lg:p-4 font-medium flex items-center gap-2 lg:text-[18px] transition-all lg:duration-300 p-2 duration-30 focus:bg-black/90 active:bg-black/50 lg:hover:bg-black/90 lg:hover:-translate-y-2 lg:hover:p-4">
-                Learn More
-                <span className="border border-[#e53344] rounded-full w-6 h-6 flex justify-center items-center">
-                  <FaArrowRight className="text-[#e53344]" />
-                </span>
-              </button>
+              <Link href={'/about'}>
+                <button className="text-[#4dbf88] rounded-md lg:p-4 font-medium flex items-center gap-2 lg:text-[18px] transition-all lg:duration-300 p-2 duration-30 focus:bg-black/90 active:bg-black/50 lg:hover:bg-black/90 lg:hover:-translate-y-2 lg:hover:p-4">
+                  Learn More
+                  <span className="border border-[#e53344] rounded-full w-6 h-6 flex justify-center items-center">
+                    <FaArrowRight className="text-[#e53344]" />
+                  </span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -106,7 +108,7 @@ export default function Home() {
             <Card
               icon={<FaRegClock className="w-9 h-9" />}
               backgroundColorClass="bg-[#4dbf88]"
-              iconTitle="Established in 2011"
+              iconTitle="Established in 2019"
               description="Founded to serve the upstream oil and gas sector, Century1 Limited has since expanded to offer diverse energy solutions through specialized subsidiaries."
               title={''}
             />
@@ -121,7 +123,7 @@ export default function Home() {
               icon={<GiWorld className="w-10 h-10" />}
               backgroundColorClass="bg-[#4dbf88]"
               iconTitle="Multinational"
-              description="Our dedicated teams operate in China, Nigeria, and the UK, bringing together expertise and innovation to meet diverse client needs."
+              description="Our dedicated teams across Nigeris and our partner across Africa operate, bringing together expertise and innovation to meet diverse client needs."
               title={''}
             />
             <Card
@@ -158,37 +160,44 @@ export default function Home() {
             </h1>
             <p className="text-[12px] sm:text-sm lg:text-lg text-center">
               Century1 Limited specializes in delivering comprehensive energy
-              solutions across the oil and gas value chain. Our dedicated
-              subsidiaries, Century1 Energy and Century1 GasTech, enhance our
-              service capabilities to meet diverse industry needs.
+              solutions across the oil and gas value chain.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <ServiceCard
               imageUrl="https://ik.imagekit.io/h6pmd5ivo/century%201/rsz_bigstock-131155118.jpg?updatedAt=1741904280048"
-              title="Energy Consulting"
-              description="We consult on most matter of energy, from supply of Crude Oil, Natural Gas (CNG and LNG), Hydrogen, Geothermal, Solar, Wind, Bio-Gas and Nuclear, from Planning, development to commissioning."
+              title="CNG/LPG/LNG Gas Trading & Sourcing  "
+              description="Century1 Limited is a leader in the local and international trading, sourcing, and distribution of compressed natural gas (CNG), liquefied petroleum gas (LPG), and liquefied natural gas (LNG). We serve industries, commercial enterprises, and households by providing reliable, cost-effective energy solutions.  "
               buttonText="LEARN MORE"
             />
             <ServiceCard
               imageUrl="https://ik.imagekit.io/h6pmd5ivo/century%201/adigun-ampa-9U0vAXekzgU-unsplash.jpg?updatedAt=1742757586627"
-              title="Energy Management"
-              description="We provide guaranteed and  regular  CNG supply to fixed facilities. CNG is discharged according to highest safety Standards and conditions set out under our Health and Safety Conditions. "
+              title="Auto Gas Conversion Solutions  "
+              description="Century1 Limited is at the forefront of Nigeria’s transition to eco-friendly gas-powered transportation, helping businesses and individuals convert their vehicles to CNG and LPG fuels.
+              - CNG & LPG Auto Gas Conversion Kits and Fleet Management & Optimization"
               buttonText="LEARN MORE"
             />
             <ServiceCard
               imageUrl="https://ik.imagekit.io/h6pmd5ivo/century%201/pcl%20gas.png?updatedAt=1742406564716"
-              title="Energy Integrated Services"
-              description="We provide comprehensive solution to your energy cycle. Provide Training, Supply CNG/LPG/LNG, Manage Staff and Manage Health and Safety."
+              title="Gas Equipment Supply"
+              description="We provide high-quality gas equipment to support CNG, LPG, and LNG operations, ensuring efficiency, safety, and reliability across different industries. 
+              - Supply of LNG, LPG & CNG Equipment, Installation & Maintenance Services, Safety & Compliance Systems and Customized Industrial Solutions
+              "
               buttonText="LEARN MORE"
             />
           </div>
         </div>
       </section>
 
+      {/* testimonials section */}
       <section className="pb-20 lg:pb-[160px]">
         <TestimonialsSection />
+      </section>
+
+      {/* Notable Projects Section */}
+      <section className="pb-20 lg:pb-[100px]">
+        <NotableProjects />
       </section>
 
       <section className="pb-20 lg:pb-[160px]">
@@ -203,8 +212,8 @@ export default function Home() {
       <section className="pb-20 lg:pb-[160px]">
         <div className="max-w-[30rem] md:max-w-4xl lg:max-w-7xl m-auto px-4 text-center space-y-4">
           <h1 className="text-[25px] md:text-[25px] lg:text-[40px] text-[#2E8B57] font-bold">
-            Energy Solutions,{' '}
-            <span className="text-[#006400]">Built to Last</span>
+            Energy without limits powering today,
+            <span className="text-[#006400]"> tomorrow sustainably. </span>
           </h1>
           <p className="text-gray-700 text-[12px] font-medium md:text-[14px] lg:text-[16px] pb-5 leading-relaxed">
             Here at century1 limited we strive to provide sustainable energy
@@ -218,9 +227,11 @@ export default function Home() {
             <br className="hidden lg:block" />
             powering communities while reducing our environmental footprint.
           </p>
-          <button className="bg-[#2E8B57] hover:bg-[#006400] text-white text-[14px] lg:text-[18px] py-[10px] md:py-[14px] px-[28px] lg:px-[36px] rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
-            Get in touch
-          </button>
+          <Link href={'/contact'}>
+            <button className="bg-[#2E8B57] hover:bg-[#006400] text-white text-[14px] lg:text-[18px] py-[10px] md:py-[14px] px-[28px] lg:px-[36px] rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
+              Get in touch
+            </button>
+          </Link>
         </div>
       </section>
       {/* Footer Section */}

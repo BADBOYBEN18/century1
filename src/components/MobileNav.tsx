@@ -2,8 +2,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { usePathname } from 'next/navigation';
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
+// import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
+// import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import React from 'react';
 import { IoIosClose } from 'react-icons/io';
 
@@ -63,15 +63,15 @@ const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
         <br />
         <br />
 
-        {/* <a
-          onClick={() => navigate('/location')}
-          className={`${path === '/location' ? 'text-[#35a76c]' : ''}`}
+        <a
+          onClick={() => navigate('/services')}
+          className={`${path === '/services' ? 'text-[#35a76c]' : ''}`}
         >
-          <p>Location</p>
+          <p>Services</p>
         </a>
         <br />
-        <br /> */}
-        <Menu as="div" className="relative inline-block text-left">
+        <br />
+        {/* <Menu as="div" className="relative inline-block text-left">
           <div>
             <MenuButton className="inline-flex w-full justify-center items-center text-lg text-black">
               <p
@@ -122,10 +122,7 @@ const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
               </MenuItem>
             </div>
           </MenuItems>
-        </Menu>
-        <br />
-        <br />
-        <br />
+        </Menu> */}
         <a
           onClick={() => navigate('/contact')}
           className={`${path === '/contact' ? 'text-[#35a76c]' : ''}`}
@@ -137,7 +134,7 @@ const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
       {/* Stay in Touch Button */}
       <Link href="/contact">
         <button className="bg-[#35a76c] text-white text-[14px] py-[8px] px-[20px] rounded-lg">
-          Stay in Touch
+          Gey in Touch
         </button>
       </Link>
     </div>

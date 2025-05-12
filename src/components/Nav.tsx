@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
+// import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
+// import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { IoIosClose } from 'react-icons/io';
 import { IoIosHome } from 'react-icons/io';
@@ -86,23 +86,23 @@ export const Nav = () => {
                 </p>
               </Link>
 
-              {/* <Link
-                href="/location"
+              <Link
+                href="/services"
                 className="flex items-center gap-2 text-black text-sm hover:text-[#d23e3e] transition-all duration-200"
               >
-                <FaLocationDot
-                  className={`${path === '/location' ? 'text-[#d23e3e]' : ''}`}
+                <FaCog
+                  className={`${path === '/services' ? 'text-[#d23e3e]' : ''}`}
                 />
                 <p
                   className={`${
-                    path === '/location' ? 'text-[#d23e3e]' : ''
+                    path === '/services' ? 'text-[#d23e3e]' : ''
                   } bg-no-repeat bg-bottom`}
                 >
-                  Location
+                  Services
                 </p>
-              </Link> */}
+              </Link>
 
-              <Menu as="div" className="relative inline-block text-left">
+              {/* <Menu as="div" className="relative inline-block text-left">
                 <div>
                   <MenuButton className="inline-flex w-full justify-center items-center text-sm text-black hover:text-[#d23e3e] transition-all duration-200">
                     <FaCog
@@ -124,7 +124,7 @@ export const Nav = () => {
                 </div>
                 <MenuItems
                   transition
-                  className="absolute right-0 top-[2rem] z-10 mt-2 w-[50rem] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+                  className="absolute right-0 z-10 mt-2 w-40 origin-top-right  rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
                 >
                   <div className="py-1 flex justify-between">
                     <div>
@@ -182,121 +182,9 @@ export const Nav = () => {
                         </Link>
                       </MenuItem>
                     </div>
-
-                    <div>
-                      <MenuItem>
-                        <h2 className="block px-4 py-2 text-md text-gray-700">
-                          <span>Paradigm Creations Services</span>
-                        </h2>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Pipeline Construction & Maintenance
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Marine Support Services
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Drilling Support Services
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Asset Health and Condition Monitoring
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Subsea Services
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Quality Assurance & Quality Control
-                        </Link>
-                      </MenuItem>
-                    </div>
-
-                    <div>
-                      <MenuItem>
-                        <h2 className="block px-4 py-2 text-md text-gray-700">
-                          <span>PCL-Gas-Services</span>
-                        </h2>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Gas Reticulation
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Manufacturing of Gas Skid
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Tanks and Cylinders
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          PRMS
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Gas Call Service
-                        </Link>
-                      </MenuItem>
-                      <MenuItem>
-                        <Link
-                          href="/"
-                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                          Energy Blog
-                        </Link>
-                      </MenuItem>
-                    </div>
                   </div>
                 </MenuItems>
-              </Menu>
+              </Menu> */}
 
               <Link
                 href="/contact"

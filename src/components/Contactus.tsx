@@ -15,7 +15,7 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    window.location.href = `mailto:century1ltd@gmail.com?
+    window.location.href = `mailto:info@century1.one?
     )}&body=${encodeURIComponent(
       `Contact Details:\nName: ${formData.name}\nCompany: ${formData.company}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
     )}`;

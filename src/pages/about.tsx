@@ -7,6 +7,7 @@ import Head from 'next/head';
 import MissionSection from '@/components/MissionVission';
 import { LogoTicker } from '@/components/LogoTicker';
 import WhyChooseUs from '@/components/WhyChooseUs';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -108,9 +109,11 @@ const About = () => {
               and clean fuel distribution, we equip industries with
               high-performance technology and smart solutions.
             </p>
-            <button className="bg-[#2E8B57] hover:bg-[#006400] text-white text-[14px] lg:text-[18px] py-[10px] md:py-[14px] px-[28px] lg:px-[36px] rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
-              Get in touch
-            </button>
+            <Link href={'/contact'}>
+              <button className="bg-[#2E8B57] hover:bg-[#006400] text-white text-[14px] lg:text-[18px] py-[10px] md:py-[14px] px-[28px] lg:px-[36px] rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
+                Get in touch
+              </button>
+            </Link>
           </div>
         </section>
       </div>

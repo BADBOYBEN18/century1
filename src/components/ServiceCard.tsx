@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link';
 import React from 'react';
 
 // Define the props interface
@@ -31,15 +32,17 @@ const ServiceCard: React.FC<CardProps> = ({
         <h2 className="text-xl font-semibold text-gray-800 mb-2 lg:mb-4">
           {title}
         </h2>
-        <p className="text-gray-600 text-[12px] lg:text-lg flex-grow">
+        <p className="text-gray-600 text-[12px] lg:text-[16px] flex-grow">
           {description}
         </p>
         {/* Optional Button */}
         {buttonText && (
           <div className="mt-4">
-            <button className="px-4 py-2 text-sm bg-black text-[#4dbf88] active:bg-black/70 font-medium rounded-lg shadow-md">
-              {buttonText}
-            </button>
+            <Link href={'/services'}>
+              <button className="px-4 py-2 text-sm bg-black text-[#4dbf88] active:bg-black/70 font-medium rounded-lg shadow-md lg:hover:-translate-y-2 transition-all ease-in-out duration-300">
+                {buttonText}
+              </button>
+            </Link>
           </div>
         )}
       </div>

@@ -16,7 +16,7 @@ const Contact = () => {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta
             name="description"
-            content="contct us page for light olives child care website"
+            content="contact page for century1 limited an oil, gas and energy company"
           />
         </Head>
         <header className="pb-4 md:pb-8 lg:pb-10">

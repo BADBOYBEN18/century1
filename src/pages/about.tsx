@@ -15,7 +15,10 @@ const About = () => {
       <Head>
         <title>About us</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="About page for century1 limited" />
+        <meta
+          name="description"
+          content="About page for century1 limited an oil, gas and energy company"
+        />
       </Head>
       <div className="font-main overflow-clip">
         <section className="pb-14 md:pb-20 lg:pb-25">

@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Allow: /location
+Allow: /services
 Allow: /about
 Allow: /contact
-Sitemap:  https://www.lightoliveschildcare.com/sitemap.xml
+Sitemap:  https://www.century1.one/sitemap.xmlS

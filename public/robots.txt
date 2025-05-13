@@ -3,4 +3,4 @@ Allow: /
 Allow: /services
 Allow: /about
 Allow: /contact
-Sitemap:  https://www.century1.one/sitemap.xmlS
+Sitemap:  https://www.century1.one/sitemap.xml

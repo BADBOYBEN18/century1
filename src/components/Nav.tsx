@@ -12,6 +12,7 @@ import { IoIosMail } from 'react-icons/io';
 import { MdGroups2 } from 'react-icons/md';
 import { FaCog } from 'react-icons/fa';
 import MobileNav from './MobileNav';
+// import Head from 'next/head';
 
 export const Nav = () => {
   const path = usePathname();
@@ -38,6 +39,15 @@ export const Nav = () => {
   return (
     <>
       <div className="font-main shadow-sm bg-white lg:bg-white/10 lg:backdrop-blur-lg border-b border-white/20 sticky top-0 z-50 py-1 md:py-2 lg:py-4">
+        {/* <Head>
+          <title>Home</title>
+          <link rel="icon" href="/path/to/favicon.ico"></link>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta
+            name="description"
+            content="Homepage for Century1 Limited, an  Oil, gas and Energy service company."
+          />
+        </Head> */}
         {/* Mobile Nav with Animation */}
         <MobileNav handleOpen={handleOpen} isOpen={open} />
         <div className="px-4 max-w-7xl m-auto md:px-7 xl:px-5">
@@ -48,7 +58,7 @@ export const Nav = () => {
                   src="https://ik.imagekit.io/h6pmd5ivo/century%201/CENTURY1LOGO.svg?updatedAt=1742072488748"
                   width={110}
                   height={110}
-                  alt="Century1 Logo"
+                  alt="Century1 Limited"
                 />
               </div>
             </Link>

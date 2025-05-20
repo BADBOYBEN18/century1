@@ -44,6 +44,10 @@ const images = [
     src: 'https://ik.imagekit.io/h6pmd5ivo/century%201/IOGC.png?updatedAt=1742601107576',
     alt: 'iogc Logo',
   },
+  {
+    src: 'https://ik.imagekit.io/h6pmd5ivo/century%201/falcon%20logo.png?updatedAt=1747773977340',
+    alt: 'falcon Logo',
+  },
 ];
 
 export const LogoTicker = () => {

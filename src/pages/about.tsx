@@ -46,11 +46,11 @@ const About = () => {
 
         <section className="pb-14 md:pb-20 lg:pb-28">
           <div className=" px-7 max-w-7xl mx-auto">
-            <div className="flex flex-col gap-x-6 sm:flex-row-reverse lg:items-start">
+            <div className="flex flex-col gap-x-6 sm:flex-row-reverse lg:items-center">
               <img
                 src="https://ik.imagekit.io/h6pmd5ivo/century%201/another.webp?updatedAt=1741904541352"
                 alt="Century1 Limited"
-                className="hidden w-1/2 sm:block lg:h-[30rem]"
+                className="hidden w-1/2 sm:block lg:h-[35rem]"
                 loading="lazy"
               />
               <div className="sm:w-1/2 lg:py-[26px] lg:pr-[26px]">
@@ -69,21 +69,28 @@ const About = () => {
                 />
 
                 <p className="py-[24px] text-[#36485C] text-[14px] lg:text-[16px] md:text-justify">
-                  At Century1 Limited, we are committed to transforming the
-                  energy sector by offering top-quality CNG/LPG sales,
-                  distribution, equipment, and machinery—alongside cutting-edge
-                  technology solutions tailored for the gas industry. Our
-                  mission is to provide sustainable, efficient, and innovative
-                  energy solutions that power businesses and communities while
-                  ensuring safety, cost-effectiveness, and environmental
-                  responsibility. <br />
+                  Century1 Limited is a pioneering force in the Gas sector,
+                  delivering sustainable and innovative solutions for businesses
+                  and communities. Since 2019, we have specialized in the sales,
+                  distribution, and technology-driven optimization of CNG, LPG,
+                  and LNG. Our commitment to efficiency, safety, and
+                  environmental responsibility drives everything we do.
                   <br />
-                  With a deep understanding of clean energy alternatives,
-                  Century1 Limited stands at the intersection of gas technology
-                  and innovation. We are not just a leading provider of CNG and
-                  LPG infrastructure—we also deliver advanced digital solutions,
-                  automation systems, and smart analytics to optimize the gas
-                  sector.
+                  <br />
+                  At Century1 Limited, we lead the transition toward greener
+                  energy. From auto gas conversion solutions to high-quality gas
+                  equipment supply, our expertise ensures reliable and
+                  cost-effective energy alternatives. Supported by our
+                  subsidiaries at Falcon corporation, we provide cutting-edge
+                  infrastructure that empowers industries and households alike.
+                  <br />
+                  <br />
+                  With a reputation built on excellence, our global partnerships
+                  and industry-leading technology position us as a trusted
+                  energy solutions provider. Whether you need gas sourcing,
+                  fleet optimization, or advanced safety compliance systems,
+                  Century1 Limited is your strategic ally for a smarter, more
+                  sustainable future.
                 </p>
               </div>
             </div>

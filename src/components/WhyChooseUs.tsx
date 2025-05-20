@@ -45,9 +45,9 @@ const WhyChooseUs = () => {
               Innovation-Driven
             </h3>
             <p className="text-gray-600">
-              We bridge tradition and technology, integrating cutting-edge
-              advancements with proven gas solutions to maximize efficiency,
-              safety, and performance.
+              We don’t just follow industry trends we set them. By integrating
+              cutting-edge technology with proven gas solutions, we ensure
+              maximum efficiency, safety, and performance for our clients.
             </p>
           </div>
 
@@ -105,9 +105,9 @@ const WhyChooseUs = () => {
               Sustainability at Our Core
             </h3>
             <p className="text-gray-600">
-              Our operations prioritize eco-friendly practices, reducing
-              environmental impact while delivering the energy solutions of
-              tomorrow.
+              We believe in powering today without sacrificing tomorrow. Our
+              eco-friendly practices reduce environmental impact while
+              delivering the energy solutions of the future.
             </p>
           </div>
 
@@ -135,9 +135,10 @@ const WhyChooseUs = () => {
               Your Success, Our Priority
             </h3>
             <p className="text-gray-600">
-              Every client receives customized support and flexible solutions
-              designed to drive growth, streamline operations, and future-proof
-              your business.
+              Every client is unique, and so are our solutions. We provide
+              customized support and flexible energy strategies designed to
+              drive growth, streamline operations, and future-proof your
+              business.
             </p>
           </div>
         </div>

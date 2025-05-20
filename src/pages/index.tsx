@@ -67,8 +67,8 @@ export default function Home() {
                 loading="lazy"
               />
 
-              <p className="py-[24px] text-[#36485C] text-[12px] lg:text-[18px] md:text-justify">
-                Century1 Limited is a premier Oil and Energy service company
+              <p className="py-[24px] text-[#36485C] text-[12px] lg:text-[18px] text-justify ">
+                1 Century1 Limited is a premier Oil and Energy service company
                 serving the Energy sector since 2019. At Century1 Limited, we
                 are committed to transforming the energy sector by offering
                 top-quality CNG/LPG sales, distribution, equipment, and
@@ -137,8 +137,8 @@ export default function Home() {
             <Card
               icon={<FaHandshake className="w-10 h-10" />}
               backgroundColorClass="bg-[#4dbf88]"
-              iconTitle="Our Subsidiaries"
-              description="Our subsidiaries, PCL Power and PCL Gas, specialize in renewable energy and gas infrastructure, ensuring comprehensive solutions for a sustainable future."
+              iconTitle="Our Partners"
+              description="Our partnership with falcon corporation specialize in renewable energy and gas infrastructure, ensuring comprehensive solutions for a sustainable future."
               title={''}
             />
             <Card

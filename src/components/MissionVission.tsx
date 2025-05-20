@@ -11,26 +11,26 @@ const MissionSection = () => {
     {
       title: 'OUR MISSION',
       label:
-        ' At Century1 Limited, we are committed to revolutionizing the energy sector by delivering sustainable and innovative gas solutions. Through our expertise in CNG, LPG, and LNG trading, equipment supply, and renewable energy solutions, we aim to drive efficiency, safety, and environmental sustainability while providing unmatched value to our customers',
+        ' At Century1 Limited, we are redefining energy solutions with innovation, sustainability, and efficiency at our core. We provide cutting-edge CNG, LPG, and LNG solutions, ensuring businesses and communities access cleaner, smarter, and safer energy. With technology-driven expertise.',
 
       icon: <FaHandshake className="text-3xl" />,
     },
     {
       title: 'OUR VISION',
       label:
-        'To be the leading provider of cutting-edge energy solutions in Nigeria and beyond, pioneering advancements in clean energy, gas-to-power technologies, and sustainable fuel alternatives that shape a greener, more efficient future for industries and communities worldwide',
+        'To lead Africa’s energy transformation with groundbreaking clean fuel solutions, shaping a future where sustainability meets high performance. We envision a world where industries thrive on safe, cost-effective, and eco-friendly energy—driving prosperity, innovation, and lasting change.',
       icon: <FaLightbulb className="text-3xl" />,
     },
     {
       title: 'OUR VALUES',
       label:
-        'We are driven by a steadfast commitment to innovation, quality, and customer satisfaction. Our core values emphasize integrity.',
+        'We drive innovation in energy solutions with integrity, blending technology with transparency. Sustainable practices and excellence in quality/safety define our mission to deliver impactful, future-ready energy services.',
       icon: <FaStar className="text-3xl" />,
     },
     {
       title: 'OUR COMMITMENT',
       label:
-        'Century1 Limited drives innovation and sustainability in energy through end-to-end services-design, installation, and maintenance delivering safe, efficient, and eco-friendly solutions that exceed client expectations.',
+        'Century1 Limited isn’t just an energy provider we’re your partner in sustainable transformation. From expert-driven gas infrastructure to top-tier equipment and automation solutions, we ensure your energy needs are met with reliability, safety, and innovation. Our promise? To fuel businesses, homes, and industries with smarter, cleaner, and future-ready energy solutions.',
       icon: <FaHeart className="text-3xl" />,
     },
   ];

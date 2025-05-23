@@ -134,7 +134,7 @@ const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
       {/* Stay in Touch Button */}
       <Link href="/contact">
         <button className="bg-[#35a76c] text-white text-[14px] py-[8px] px-[20px] rounded-lg">
-          Gey in Touch
+          Get in Touch
         </button>
       </Link>
     </div>

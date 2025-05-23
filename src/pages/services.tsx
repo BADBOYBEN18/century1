@@ -5,6 +5,8 @@ import Link from 'next/link';
 import React from 'react';
 import Head from 'next/head';
 import { LogoTicker } from '@/components/LogoTicker';
+import GasServicesSection from '@/components/GasServicesSection';
+import { FaGasPump } from 'react-icons/fa';
 
 const Services = () => {
   return (
@@ -14,7 +16,7 @@ const Services = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Services page for century1 limited an  Oil, gas and Energy service company."
+          content="Services page for century1 limited Energy service company."
         />
       </Head>
       <div className="font-main overflow-clip">
@@ -40,8 +42,8 @@ const Services = () => {
         </header>
 
         <section className="py-14 lg:pb-[160px] ">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8 md:mb-12">
               <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
                 Our Energy Solutions
               </h2>
@@ -51,25 +53,15 @@ const Services = () => {
               </p>
             </div>
 
+            <GasServicesSection />
+
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {/* <!-- Service Card 1: Gas Trading --> */}
               <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
                 <div className="p-8">
                   <div className="flex items-center mb-4">
-                    <div className="bg-blue-100 p-3 rounded-full">
-                      <svg
-                        className="w-6 h-6 text-blue-600"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M13 10V3L4 14h7v7l9-11h-7z"
-                        ></path>
-                      </svg>
+                    <div className="bg-blue-100 p-4 rounded-full">
+                      <FaGasPump className="w-5 h-5" />
                     </div>
                     <h3 className="text-xl font-semibold text-gray-800 ml-4">
                       CNG/LPG/LNG Gas Trading & Sourcing

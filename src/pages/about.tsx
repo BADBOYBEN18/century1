@@ -19,7 +19,7 @@ const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="About page for century1 limited an oil, gas and energy company"
+          content="About page for century1 limited an energy company"
         />
       </Head>
       <div className="font-main overflow-clip">
@@ -69,7 +69,7 @@ const About = () => {
                 />
 
                 <p className="py-[24px] text-[#36485C] text-[14px] lg:text-[16px] md:text-justify">
-                  Century1 Limited is a pioneering force in the Gas sector,
+                  Century1 Limited is a pioneering force in the Energy sector,
                   delivering sustainable and innovative solutions for businesses
                   and communities. Since 2019, we have specialized in the sales,
                   distribution, and technology-driven optimization of CNG, LPG,

@@ -31,7 +31,7 @@ const HeroSection = () => {
         'https://ik.imagekit.io/h6pmd5ivo/century%201/pcl%20gas.png?updatedAt=1742406564716',
       title: 'Innovating for a Sustainable Future',
       description:
-        'Our partners at falcon-corporation ensure comprehensive energy solutions.',
+        'Our strategic partnership with falcon-corporation ensure comprehensive energy solutions.',
       buttonText: 'Contact Us',
       href: '/contact',
     },

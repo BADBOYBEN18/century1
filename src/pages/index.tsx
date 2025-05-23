@@ -31,7 +31,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Homepage for Century1 Limited, an  Oil, gas and Energy service company."
+          content="Homepage for Century1 Limited, an Energy service company."
         />
       </Head>
 
@@ -68,15 +68,15 @@ export default function Home() {
               />
 
               <p className="py-[24px] text-[#36485C] text-[12px] lg:text-[18px] text-justify ">
-                1 Century1 Limited is a premier Oil and Energy service company
-                serving the Energy sector since 2019. At Century1 Limited, we
-                are committed to transforming the energy sector by offering
-                top-quality CNG/LPG sales, distribution, equipment, and
-                machinery—alongside cutting-edge technology solutions tailored
-                for the gas industry. Our mission is to provide sustainable,
-                efficient, and innovative energy solutions that power businesses
-                and communities while ensuring safety, cost-effectiveness, and
-                environmental responsibility.
+                Century1 Limited is an Energy service company serving the Energy
+                sector since 2019. At Century1 Limited, we are committed to
+                transforming the energy sector by offering top-quality CNG/LPG
+                sales, distribution, equipment, and machinery—alongside
+                cutting-edge technology solutions tailored for the gas industry.
+                Our mission is to provide sustainable, efficient, and innovative
+                energy solutions that power businesses and communities while
+                ensuring safety, cost-effectiveness, and environmental
+                responsibility.
               </p>
 
               <Link href={'/about'}>
@@ -110,7 +110,7 @@ export default function Home() {
               icon={<FaRegClock className="w-9 h-9" />}
               backgroundColorClass="bg-[#4dbf88]"
               iconTitle="Established in 2019"
-              description="Founded to serve the upstream oil and gas sector, Century1 Limited has since expanded to offer diverse energy solutions through specialized subsidiaries."
+              description="Founded to serve the upstream energy sector, Century1 Limited has since expanded to offer diverse energy solutions through specialized subsidiaries."
               title={''}
             />
             <Card
@@ -167,9 +167,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <ServiceCard
-              imageUrl="https://ik.imagekit.io/h6pmd5ivo/century%201/rsz_bigstock-131155118.jpg?updatedAt=1741904280048"
-              title="CNG/LPG/LNG Gas Trading & Sourcing  "
-              description="Century1 Limited is a leader in the local and international trading, sourcing, and distribution of compressed natural gas (CNG), liquefied petroleum gas (LPG), and liquefied natural gas (LNG). We serve industries, commercial enterprises, and households by providing reliable, cost-effective energy solutions.  "
+              imageUrl="https://ik.imagekit.io/h6pmd5ivo/century%201/prms%20image2.jpg?updatedAt=1747903285804"
+              title="Pressure Reduction & Metering Stations (PRMS)"
+              description="Our PRMS solutions regulate and reduce high pipeline pressure to meet specific equipment requirements. These stations also provide accurate metering for billing and cost analysis."
               buttonText="LEARN MORE"
             />
             <ServiceCard
